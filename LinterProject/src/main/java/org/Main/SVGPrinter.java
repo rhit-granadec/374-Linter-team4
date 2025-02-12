@@ -98,6 +98,15 @@ public class SVGPrinter {
             source.append("\n");
         }
 
+        for(String superclass : input.getSuperclasses()) {
+            source.append(className);
+            source.append(" --> ");
+            source.append(superclass);
+            source.append(" : ");
+            source.append("Is A");
+            source.append("\n");
+        }
+
         for(String inheritorName : input.getInherits()) {
             source.append(className);
             source.append(" --> ");
