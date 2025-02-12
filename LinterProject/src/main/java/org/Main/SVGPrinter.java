@@ -82,37 +82,26 @@ public class SVGPrinter {
 
         source.append("}\n");
 
-        for(String dependencyName : input.getDependencies()) {
-            source.append(className);
-            source.append(" ..> ");
-            source.append(dependencyName);
-            source.append("\n");
-        }
-
         for(ClassContainer.AssociationContainer association : input.getAssociations()) {
             source.append(className);
-            source.append(" --> ");
+            String arrow;
+            if (association.relationshipType != null) {
+                switch (association.relationshipType ) {
+                    case Composition -> arrow = "--*";
+                    case Aggregation -> arrow = "--o";
+                    case Dependency -> arrow = "-->";
+                    case DependencyWeak -> arrow = "..>";
+                    case Extension -> arrow = "--|>";
+                    case Implementation -> arrow = "..|>";
+                    default -> arrow = "-->";
+                }
+            } else arrow = "-->";
+            source.append(arrow);
             source.append(association.ClassName);
-            source.append(" : ");
-            source.append(association.AssociationName);
-            source.append("\n");
-        }
-
-        for(String superclass : input.getSuperclasses()) {
-            source.append(className);
-            source.append(" --> ");
-            source.append(superclass);
-            source.append(" : ");
-            source.append("Is A");
-            source.append("\n");
-        }
-
-        for(String inheritorName : input.getInherits()) {
-            source.append(className);
-            source.append(" --> ");
-            source.append(inheritorName);
-            source.append(" : ");
-            source.append("<<inherits>>");
+            if(association.AssociationName != null) {
+                source.append(" : ");
+                source.append(association.AssociationName);
+            }
             source.append("\n");
         }
 

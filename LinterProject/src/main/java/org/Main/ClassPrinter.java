@@ -30,7 +30,7 @@ public class ClassPrinter extends ClassVisitor {
         if(slashSuperName == -1) parsedSuperName = superName;
         else parsedSuperName = superName.substring(slashSuperName+1);
         if(!parsedSuperName.equals("Object") ) {
-            CC.addSuperclass(parsedSuperName);
+            CC.addAssociation(parsedSuperName, "Is A", ClassContainer.relationshipType.Extension);
         }
 
         for(String singleInterface : interfaces) {
@@ -38,7 +38,7 @@ public class ClassPrinter extends ClassVisitor {
             String parsedInterface;
             if(slashInterfaceName == -1) parsedInterface = singleInterface;
             else parsedInterface = singleInterface.substring(slashInterfaceName+1);
-            CC.addInheritance(parsedInterface);
+            CC.addAssociation(parsedInterface, null, ClassContainer.relationshipType.Implementation);
         }
     }
 

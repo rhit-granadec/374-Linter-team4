@@ -31,29 +31,34 @@ public class ClassContainer {
             this.returnValue = returnValue;
         }
     }
-    private ArrayList<String> Dependencies;
-    private ArrayList<String> Inherits;
-    private ArrayList<String> Superclasses;
 
     private ArrayList<AssociationContainer> Associations;
+
 
     public class AssociationContainer {
         public String ClassName;
         public String AssociationName;
-
-        AssociationContainer(String className, String associationName){
+        public relationshipType relationshipType;
+        AssociationContainer(String className, String associationName, relationshipType relationshipType){
             this.ClassName = className;
             this.AssociationName = associationName;
+            this.relationshipType = relationshipType;
         }
+    }
+
+    public enum relationshipType {
+        Aggregation,
+        Dependency,
+        DependencyWeak,
+        Extension,
+        Implementation,
+        Composition,
     }
 
 
     public ClassContainer() {
         Methods = new ArrayList<MethodContainer>();
         Fields = new ArrayList<FieldContainer>();
-        Dependencies = new ArrayList<String>();
-        Inherits = new ArrayList<String>();
-        Superclasses = new ArrayList<String>();
         Associations = new ArrayList<AssociationContainer>();
     }
 
@@ -73,20 +78,8 @@ public class ClassContainer {
         Fields.add(new FieldContainer(fieldName, returnType));
     }
 
-    public void addDependencies(String dependencyName ) {
-        Dependencies.add(dependencyName);
-    }
-
-    public void addAssociation(String className, String associationName) {
-        Associations.add(new AssociationContainer(className, associationName));
-    }
-
-    public void addInheritance(String inheritedName) {
-        Inherits.add(inheritedName);
-    }
-
-    public void addSuperclass(String superclassName) {
-        Superclasses.add(superclassName);
+    public void addAssociation(String className, String associationName, relationshipType relationshipType) {
+        Associations.add(new AssociationContainer(className, associationName, relationshipType));
     }
 
     public ArrayList<MethodContainer> getMethods() {
@@ -97,20 +90,8 @@ public class ClassContainer {
         return Fields;
     }
 
-    public ArrayList<String> getDependencies() {
-        return Dependencies;
-    }
-
     public ArrayList<AssociationContainer> getAssociations() {
         return Associations;
-    }
-
-    public ArrayList<String> getInherits() {
-        return Inherits;
-    }
-
-    public ArrayList<String> getSuperclasses() {
-        return Superclasses;
     }
 
     public void makeAbstract() {

@@ -21,7 +21,7 @@ public class ArrowAnalyzer {
             for(ClassContainer.MethodContainer method : methods) {
                 for(String input : method.inputs) {
                     if(names.contains(input)) {
-                        containedClass.addDependencies(input);
+                        containedClass.addAssociation(input, null, ClassContainer.relationshipType.Dependency);
                     }
                 }
             }
@@ -40,7 +40,10 @@ public class ArrowAnalyzer {
             for(ClassContainer.FieldContainer field : fields) {
                 if(names.contains(field.returnValue)) {
                     removes.add(fields.indexOf(field));
-                    containedClass.addAssociation(field.returnValue, field.name);
+                    containedClass.addAssociation(
+                            field.returnValue,
+                            field.name,
+                            ClassContainer.relationshipType.Dependency);
                 }
             }
             while(!removes.empty()){
