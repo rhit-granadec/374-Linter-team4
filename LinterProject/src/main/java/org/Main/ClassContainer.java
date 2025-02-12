@@ -33,6 +33,7 @@ public class ClassContainer {
     }
     private ArrayList<String> Dependencies;
     private ArrayList<String> Inherits;
+    private ArrayList<String> Superclasses;
 
     private ArrayList<AssociationContainer> Associations;
 
@@ -52,6 +53,7 @@ public class ClassContainer {
         Fields = new ArrayList<FieldContainer>();
         Dependencies = new ArrayList<String>();
         Inherits = new ArrayList<String>();
+        Superclasses = new ArrayList<String>();
         Associations = new ArrayList<AssociationContainer>();
     }
 
@@ -83,6 +85,10 @@ public class ClassContainer {
         Inherits.add(inheritedName);
     }
 
+    public void addSuperclass(String superclassName) {
+        Superclasses.add(superclassName);
+    }
+
     public ArrayList<MethodContainer> getMethods() {
         return Methods;
     }
@@ -101,6 +107,10 @@ public class ClassContainer {
 
     public ArrayList<String> getInherits() {
         return Inherits;
+    }
+
+    public ArrayList<String> getSuperclasses() {
+        return Superclasses;
     }
 
     public void makeAbstract() {

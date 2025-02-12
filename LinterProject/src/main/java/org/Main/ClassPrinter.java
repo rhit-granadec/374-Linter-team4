@@ -30,7 +30,7 @@ public class ClassPrinter extends ClassVisitor {
         if(slashSuperName == -1) parsedSuperName = superName;
         else parsedSuperName = superName.substring(slashSuperName+1);
         if(!parsedSuperName.equals("Object") ) {
-            CC.addAssociation(parsedSuperName, "Is A");
+            CC.addSuperclass(parsedSuperName);
         }
 
         for(String singleInterface : interfaces) {
