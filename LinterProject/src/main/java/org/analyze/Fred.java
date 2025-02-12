@@ -1,7 +1,5 @@
 package org.analyze;
 
-import org.example.ClassPrinter;
-
 import java.util.ArrayList;
 
 public class Fred extends old implements person{

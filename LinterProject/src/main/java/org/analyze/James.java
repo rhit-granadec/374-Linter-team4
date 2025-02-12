@@ -1,6 +1,6 @@
 package org.analyze;
 
-import org.example.ClassPrinter;
+import org.Main.ClassPrinter;
 
 public class James implements person {
     int numbers;
