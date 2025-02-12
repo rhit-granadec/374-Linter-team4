@@ -6,6 +6,9 @@ public class Main {
 
     static ArrayList<String> ClassesToAnalyze;
     public static void main(String[] args) {
+
+        String outputFilename = "FullSetup";
+
         ClassesToAnalyze = new ArrayList<>();
         ClassesToAnalyze.add("org.requestedTest.DecryptionInputStream");
         ClassesToAnalyze.add("org.requestedTest.EncryptionOutputStream");
@@ -13,6 +16,6 @@ public class Main {
         ClassesToAnalyze.add("org.requestedTest.IEncryption");
         ClassesToAnalyze.add("org.requestedTest.SubstitutionCipher");
         ClassesToAnalyze.add("org.requestedTest.TextEditorApp");
-        Director runner = new Director(ClassesToAnalyze);
+        Director runner = new Director(ClassesToAnalyze, outputFilename);
     }
 }

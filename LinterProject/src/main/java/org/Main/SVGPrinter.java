@@ -31,6 +31,7 @@ public class SVGPrinter {
         } catch(Exception e) {
             System.out.println("ERROR:");
             System.out.println(e);
+            e.printStackTrace();
         }
     }
 
