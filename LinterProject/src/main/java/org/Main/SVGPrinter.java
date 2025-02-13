@@ -49,7 +49,7 @@ public class SVGPrinter {
 
     private String processClassContainer(ClassContainer input) {
         StringBuilder source = new StringBuilder();
-        String className = input.getName();
+        String className = input.getName().replace('/', '.');
         if(input.isAbstract) source.append("abstract ");
         if(input.isInterface) source.append("interface ");
         else source.append("class ");
@@ -58,7 +58,7 @@ public class SVGPrinter {
 
         for(ClassContainer.FieldContainer field : input.getFields()) {
             source.append(" ");
-            source.append(field.name);
+            source.append(field.name.replace('/', '.'));
             source.append(": ");
             source.append(field.returnValue);
             source.append("\n");
@@ -66,7 +66,7 @@ public class SVGPrinter {
 
         for(ClassContainer.MethodContainer method : input.getMethods()){
             source.append(" ");
-            source.append(method.name);
+            source.append(method.name.replace('/', '.'));
             source.append("(");
             if(!method.inputs.isEmpty()) {
                 for (String methodInput : method.inputs) {
@@ -97,10 +97,10 @@ public class SVGPrinter {
                 }
             } else arrow = "-->";
             source.append(arrow);
-            source.append(association.ClassName);
+            source.append(association.ClassName.replace('/', '.'));
             if(association.AssociationName != null) {
                 source.append(" : ");
-                source.append(association.AssociationName);
+                source.append(association.AssociationName.replace('/', '.'));
             }
             source.append("\n");
         }

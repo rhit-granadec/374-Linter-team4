@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class ClassContainer {
 
     private String name;
+    private String fullName;
     private ArrayList<MethodContainer> Methods;
     boolean isAbstract = false;
     boolean isInterface = false;
@@ -74,8 +75,8 @@ public class ClassContainer {
         Methods.add(new MethodContainer(methodName, returnValue, inputs));
     }
 
-    public void addField(String fieldName, String returnType ) {
-        Fields.add(new FieldContainer(fieldName, returnType));
+    public void addField(String fieldName, String type ) {
+        Fields.add(new FieldContainer(fieldName, type));
     }
 
     public void addAssociation(String className, String associationName, relationshipType relationshipType) {

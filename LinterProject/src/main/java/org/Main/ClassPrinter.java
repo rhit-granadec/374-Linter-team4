@@ -4,13 +4,13 @@ import org.objectweb.asm.*;
 
 import java.util.ArrayList;
 
-import static org.objectweb.asm.Opcodes.ASM4;
+import static org.objectweb.asm.Opcodes.ASM7;
 
 public class ClassPrinter extends ClassVisitor {
 
     ClassContainer CC = new ClassContainer();
     public ClassPrinter() {
-        super(ASM4);
+        super(ASM7);
     }
 
     public void visit(int version, int access, String name,
@@ -19,26 +19,26 @@ public class ClassPrinter extends ClassVisitor {
         if(access == 1537) CC.makeInterface();
         else if (access == 1057) CC.makeAbstract();
 
-        int slashIndexName = name.lastIndexOf("/");
-        String parsedName;
-        if(slashIndexName == -1) parsedName = name;
-        else parsedName = name.substring(slashIndexName+1);
-        CC.setName(parsedName);
+//        int slashIndexName = name.lastIndexOf("/");
+//        String parsedName;
+//        if(slashIndexName == -1) parsedName = name;
+//        else parsedName = name.substring(slashIndexName+1);
+        CC.setName(name);
 
         int slashSuperName = superName.lastIndexOf("/");
         String parsedSuperName;
         if(slashSuperName == -1) parsedSuperName = superName;
         else parsedSuperName = superName.substring(slashSuperName+1);
         if(!parsedSuperName.equals("Object") ) {
-            CC.addAssociation(parsedSuperName, "Is A", ClassContainer.relationshipType.Extension);
+            CC.addAssociation(superName, null, ClassContainer.relationshipType.Extension);
         }
 
         for(String singleInterface : interfaces) {
-            int slashInterfaceName = singleInterface.lastIndexOf("/");
-            String parsedInterface;
-            if(slashInterfaceName == -1) parsedInterface = singleInterface;
-            else parsedInterface = singleInterface.substring(slashInterfaceName+1);
-            CC.addAssociation(parsedInterface, null, ClassContainer.relationshipType.Implementation);
+//            int slashInterfaceName = singleInterface.lastIndexOf("/");
+//            String parsedInterface;
+//            if(slashInterfaceName == -1) parsedInterface = singleInterface;
+//            else parsedInterface = singleInterface.substring(slashInterfaceName+1);
+            CC.addAssociation(singleInterface, null, ClassContainer.relationshipType.Implementation);
         }
     }
 

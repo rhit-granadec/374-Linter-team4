@@ -1,6 +1,7 @@
 package org.Main;
 
 import java.util.ArrayList;
+import java.util.Queue;
 
 public class Director {
     static String OutputPath = "outputs/";
@@ -9,9 +10,9 @@ public class Director {
     private SVGPrinter PUMLInterface;
     private ASMHandler ASMInterface = new ASMHandler();
     private ArrowAnalyzer arrowAnalyzer = new ArrowAnalyzer();
-    private ArrayList<String> ClassesToAnalyze;
+    private Queue<String> ClassesToAnalyze;
 
-    public Director(ArrayList<String> ClassesToAnalyze, String fileName) {
+    public Director(Queue<String> ClassesToAnalyze, String fileName) {
         this.fileName = fileName;
         this.fullOutputFile = OutputPath + fileName + ".svg";
         PUMLInterface = new SVGPrinter(fullOutputFile);

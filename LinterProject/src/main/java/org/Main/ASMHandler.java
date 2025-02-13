@@ -3,23 +3,33 @@ package org.Main;
 import org.objectweb.asm.ClassReader;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Queue;
 
 public class ASMHandler {
-    ArrayList<String> classesToAnalyze;
-    public ASMHandler() {
-        this.classesToAnalyze = new ArrayList<String>();
-    }
+    HashSet<String> classesToAnalyze;
 
-    public ArrayList<ClassContainer> CompileFiles(ArrayList<String> ClassNames) {
-
+    public ArrayList<ClassContainer> CompileFiles(Queue<String> classNames) {
+        classesToAnalyze = new HashSet<String>(classNames);
         ArrayList<ClassContainer>  classContainers= new ArrayList<ClassContainer>();
         try {
-            for(String classToAnalyze : ClassNames) {
+            while(!classNames.isEmpty()) {
+                String classToAnalyze = classNames.poll();
                 ClassPrinter cp = new ClassPrinter();
                 try{
                     ClassReader cr = new ClassReader(classToAnalyze);
                     cr.accept(cp, 0);
-                    classContainers.add(cp.getClassContainer());
+                    ClassContainer cc = cp.getClassContainer();
+                    classContainers.add(cc);
+                    for(ClassContainer.AssociationContainer assoc : cc.getAssociations()) {
+                        String cName = assoc.ClassName;
+                        if(!classesToAnalyze.contains(cName)) {
+                            System.out.println(cName);
+                            classNames.offer(cName);
+                            classesToAnalyze.add(cName);
+                            System.out.println("Added class " + cName);
+                        }
+                    }
                 } catch (Exception e) {
                     System.out.println("ClassReader FILE ERROR:");
                     System.out.println(e);

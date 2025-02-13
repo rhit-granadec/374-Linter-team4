@@ -1,7 +1,8 @@
 <component name="libraryTable">
-  <library name="asm-9.7.1(1)">
+  <library name="libraries">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/libraries/asm-9.7.1(1).jar!/" />
+      <root url="jar://$PROJECT_DIR$/libraries/plantuml-mit-1.2025.0.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
