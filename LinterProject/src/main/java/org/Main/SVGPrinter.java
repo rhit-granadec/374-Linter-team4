@@ -84,18 +84,7 @@ public class SVGPrinter {
 
         for(ClassContainer.AssociationContainer association : input.getAssociations()) {
             source.append(className);
-            String arrow;
-            if (association.relationshipType != null) {
-                switch (association.relationshipType ) {
-                    case Composition -> arrow = "--*";
-                    case Aggregation -> arrow = "--o";
-                    case Dependency -> arrow = "-->";
-                    case DependencyWeak -> arrow = "..>";
-                    case Extension -> arrow = "--|>";
-                    case Implementation -> arrow = "..|>";
-                    default -> arrow = "-->";
-                }
-            } else arrow = "-->";
+            String arrow = getArrow(association);
             source.append(arrow);
             source.append(association.ClassName.replace('/', '.'));
             if(association.AssociationName != null) {
@@ -108,5 +97,21 @@ public class SVGPrinter {
         source.append("\n");
 
         return source.toString();
+    }
+
+    private static String getArrow(ClassContainer.AssociationContainer association) {
+        String arrow;
+        if (association.relationshipType != null) {
+            switch (association.relationshipType ) {
+                case Composition -> arrow = "--*";
+                case Aggregation -> arrow = "--o";
+                case Dependency -> arrow = "-->";
+                case DependencyWeak -> arrow = "..>";
+                case Extension -> arrow = "--|>";
+                case Implementation -> arrow = "..|>";
+                default -> arrow = "-->";
+            }
+        } else arrow = "-->";
+        return arrow;
     }
 }

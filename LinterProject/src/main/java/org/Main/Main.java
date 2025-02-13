@@ -7,6 +7,7 @@ import java.util.Queue;
 public class Main {
 
     static Queue<String> ClassesToAnalyze;
+
     public static void main(String[] args) {
 
         String outputFilename = "FullSetup";
@@ -18,7 +19,8 @@ public class Main {
 //        ClassesToAnalyze.add("org.requestedTest.IEncryption");
 //        ClassesToAnalyze.add("org.requestedTest.SubstitutionCipher");
 //        ClassesToAnalyze.add("org.requestedTest.TextEditorApp");
-        ClassesToAnalyze.add("java.util.LinkedList");
+
+        ClassesToAnalyze.add("org.Main.Main");
         Director runner = new Director(ClassesToAnalyze, outputFilename);
     }
 }
