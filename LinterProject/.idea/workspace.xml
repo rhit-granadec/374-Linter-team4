@@ -4,13 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f40b7185-b2e1-4a35-895e-fbde7c658616" name="Changes" comment="attempted to cull arrows">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Main/SingletonIdentifier.java" afterDir="false" />
+    <list default="true" id="f40b7185-b2e1-4a35-895e-fbde7c658616" name="Changes" comment="basic singleton searcher">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Main/ClassContainerOperator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ASMHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ASMHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/ClassContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/ClassContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ArrowAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ArrowAnalyzer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$AssociationContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$AssociationContainer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$FieldContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$FieldContainer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$MethodContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$MethodContainer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$relationshipType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$relationshipType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/Director.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/Director.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/ArrowAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/ArrowAnalyzer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/Director.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/DuplicateArrowRemover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/DuplicateArrowRemover.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/SingletonIdentifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/SingletonIdentifier.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +30,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -99,7 +109,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739801255782</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="basic singleton searcher">
+      <option name="closed" value="true" />
+      <created>1739821518127</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1739821518127</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,7 +137,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added local variable checks" />
     <MESSAGE value="attempted to cull arrows" />
-    <option name="LAST_COMMIT_MESSAGE" value="attempted to cull arrows" />
+    <MESSAGE value="basic singleton searcher" />
+    <option name="LAST_COMMIT_MESSAGE" value="basic singleton searcher" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

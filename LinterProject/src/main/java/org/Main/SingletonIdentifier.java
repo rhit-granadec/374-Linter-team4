@@ -1,9 +1,10 @@
 package org.Main;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
-public class SingletonIdentifier {
+public class SingletonIdentifier implements ClassContainerOperator{
 
     private final boolean abuseSearch;
 
@@ -11,7 +12,8 @@ public class SingletonIdentifier {
         this.abuseSearch = abuseSearch;
     }
 
-    public void reworkClasses(ArrayList<ClassContainer> classList) {
+    @Override
+    public void reworkClasses(List<ClassContainer> classList) {
         for (ClassContainer CC: classList) {
             boolean isSingleton = true;
             boolean isAbused = abuseSearch;

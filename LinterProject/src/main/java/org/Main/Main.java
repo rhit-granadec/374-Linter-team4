@@ -1,6 +1,7 @@
 package org.Main;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -22,12 +23,12 @@ public class Main {
 //        ClassesToAnalyze.add("org.Main.Main");
         //        ClassesToAnalyze.add("java.util.LinkedList");
 
-        boolean doSingletonSearch = true;
-        boolean doSingletonAbuseCheck = true;
+        HashSet<String> identifiers = new HashSet<String>();
+        identifiers.add("SingletonSearch");
+        identifiers.add("SingletonAbuseSearch");
 
         Director runner = new Director(ClassesToAnalyze,
                 outputFilename,
-                doSingletonSearch,
-                doSingletonAbuseCheck);
+                identifiers);
     }
 }

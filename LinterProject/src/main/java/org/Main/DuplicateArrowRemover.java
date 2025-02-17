@@ -3,9 +3,10 @@ package org.Main;
 import javax.lang.model.type.ArrayType;
 import java.util.*;
 
-public class DuplicateArrowRemover {
+public class DuplicateArrowRemover implements ClassContainerOperator{
 
-    public void reworkClasses(ArrayList<ClassContainer> classList) {
+    @Override
+    public void reworkClasses(List<ClassContainer> classList) {
         for (ClassContainer CC: classList) {
             ArrayList<ClassContainer.AssociationContainer> assoc = CC.getAssociations();
             int i = 0;
