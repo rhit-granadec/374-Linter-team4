@@ -9,6 +9,8 @@ public class ClassContainer {
     private ArrayList<MethodContainer> Methods;
     boolean isAbstract = false;
     boolean isInterface = false;
+    boolean isSingleton = false;
+    boolean isAbusedSingleton = false;
 
     public class MethodContainer {
         public String name;
@@ -114,5 +116,13 @@ public class ClassContainer {
 
     public boolean isInterface() {
         return isInterface;
+    }
+
+    public boolean isSingleton() {return isSingleton;}
+    public boolean isAbusedSingleton() {return isAbusedSingleton;}
+    public void setSingleton() {this.isSingleton = true;}
+    public void setAbusedSingleton() {
+        setSingleton();
+        isAbusedSingleton = true;
     }
 }

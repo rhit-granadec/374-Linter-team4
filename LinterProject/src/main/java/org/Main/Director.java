@@ -11,18 +11,27 @@ public class Director {
     private ASMHandler ASMInterface = new ASMHandler();
     private ArrowAnalyzer arrowAnalyzer = new ArrowAnalyzer();
     private DuplicateArrowRemover duplicateArrowRemover = new DuplicateArrowRemover();
+    private SingletonIdentifier singletonIdentifier;
     private Queue<String> ClassesToAnalyze;
 
-    public Director(Queue<String> ClassesToAnalyze, String fileName) {
+    public Director(Queue<String> ClassesToAnalyze,
+                    String fileName,
+                    boolean SingletonSearch,
+                    boolean SingletonAbuseSearch) {
+
         this.fileName = fileName;
         this.fullOutputFile = OutputPath + fileName + ".svg";
         PUMLInterface = new SVGPrinter(fullOutputFile);
+
+        this.singletonIdentifier = new SingletonIdentifier(SingletonAbuseSearch);
 
         this.ClassesToAnalyze = ClassesToAnalyze;
 
         ArrayList<ClassContainer> classContainers = invokeASM();
         arrowAnalyzer.reworkClasses(classContainers);
         duplicateArrowRemover.reworkClasses(classContainers);
+        if(SingletonSearch) singletonIdentifier.reworkClasses(classContainers);
+
         invokePUML(classContainers);
     }
 

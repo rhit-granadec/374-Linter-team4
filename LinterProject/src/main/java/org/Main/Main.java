@@ -21,6 +21,13 @@ public class Main {
 
 //        ClassesToAnalyze.add("org.Main.Main");
         //        ClassesToAnalyze.add("java.util.LinkedList");
-        Director runner = new Director(ClassesToAnalyze, outputFilename);
+
+        boolean doSingletonSearch = true;
+        boolean doSingletonAbuseCheck = true;
+
+        Director runner = new Director(ClassesToAnalyze,
+                outputFilename,
+                doSingletonSearch,
+                doSingletonAbuseCheck);
     }
 }
