@@ -1,16 +1,18 @@
 package org.Main;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Stack;
 
-public class ArrowAnalyzer {
+public class ArrowAnalyzer implements ClassContainerOperator{
 
-    public void reworkClasses(ArrayList<ClassContainer> classList) {
+    @Override
+    public void reworkClasses(List<ClassContainer> classList) {
         dependencyAnalysis(classList);
         associationAnalysis(classList);
     }
 
-    private void dependencyAnalysis(ArrayList<ClassContainer> classList) {
+    private void dependencyAnalysis(List<ClassContainer> classList) {
         ArrayList<String> names = new ArrayList<String>();
         for(ClassContainer containedClass : classList) {
             names.add(containedClass.getName());
@@ -28,7 +30,7 @@ public class ArrowAnalyzer {
         }
     }
 
-    private void associationAnalysis(ArrayList<ClassContainer> classList) {
+    private void associationAnalysis(List<ClassContainer> classList) {
         ArrayList<String> names = new ArrayList<String>();
         for(ClassContainer containedClass : classList) {
             names.add(containedClass.getName());
