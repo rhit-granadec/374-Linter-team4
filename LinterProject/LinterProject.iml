@@ -8,5 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="libraries" level="project" />
+    <orderEntry type="library" name="asm-tree-9.7.1" level="project" />
   </component>
 </module>
