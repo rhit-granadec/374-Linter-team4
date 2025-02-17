@@ -46,9 +46,11 @@ public class ClassPrinter extends ClassVisitor {
     }
 
     public void visitSource(String source, String debug) {
+        //has filename information
     }
 
     public void visitOuterClass(String owner, String name, String desc) {
+        //never reached in main test code. unsure
     }
 
     public AnnotationVisitor visitAnnotation(String desc,
@@ -57,10 +59,16 @@ public class ClassPrinter extends ClassVisitor {
     }
 
     public void visitAttribute(Attribute attr) {
+        //never reached. unsure.
     }
 
     public void visitInnerClass(String name, String outerName,
                                 String innerName, int access) {
+//        System.out.println(name);
+//        System.out.println(outerName);
+//        System.out.println(innerName);
+//        System.out.println(access);
+        //looks for specific inner classes. may need to leverage in some areas.
     }
 
     public FieldVisitor visitField(int access, String name, String desc,
@@ -71,6 +79,10 @@ public class ClassPrinter extends ClassVisitor {
 
     public MethodVisitor visitMethod(int access, String name,
                                      String desc, String signature, String[] exceptions) {
+
+//        ClassReader cr = new ClassReader(classToAnalyze);
+//        cr.accept(cp, 0);
+//        ClassContainer cc = cp.getClassContainer();
         if(name.charAt(0) == '<') return null;
         CC.addMethod(name, descReturnParser(desc), descVariablesParser(desc));
         return null;
