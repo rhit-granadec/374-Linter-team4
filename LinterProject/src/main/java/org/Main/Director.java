@@ -10,6 +10,7 @@ public class Director {
     private SVGPrinter PUMLInterface;
     private ASMHandler ASMInterface = new ASMHandler();
     private ArrowAnalyzer arrowAnalyzer = new ArrowAnalyzer();
+    private DuplicateArrowRemover duplicateArrowRemover = new DuplicateArrowRemover();
     private Queue<String> ClassesToAnalyze;
 
     public Director(Queue<String> ClassesToAnalyze, String fileName) {
@@ -21,6 +22,7 @@ public class Director {
 
         ArrayList<ClassContainer> classContainers = invokeASM();
         arrowAnalyzer.reworkClasses(classContainers);
+        duplicateArrowRemover.reworkClasses(classContainers);
         invokePUML(classContainers);
     }
 

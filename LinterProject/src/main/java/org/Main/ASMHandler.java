@@ -27,6 +27,8 @@ public class ASMHandler {
                 }
                 if(analyzedClasses.contains(classToAnalyze)) {
                     continue;
+                } else if(analyzedClasses.contains(classToAnalyze.replace('/', '.'))) {
+                    continue;
                 }
                 try{
                     ClassNode classNode = new ClassNode();

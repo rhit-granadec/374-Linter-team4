@@ -96,6 +96,9 @@ public class ClassContainer {
     public ArrayList<AssociationContainer> getAssociations() {
         return Associations;
     }
+    public void setAssociations(ArrayList<AssociationContainer> givenAssociations) {
+        Associations = givenAssociations;
+    }
 
     public void makeAbstract() {
         this.isAbstract = true;
