@@ -55,6 +55,7 @@ public class SVGPrinter {
         if(input.isInterface) source.append("interface ");
         else source.append("class ");
         source.append(className);
+        if(input.isSingleton()) source.append(" #F88;line:red");
         source.append(" {\n");
 
         for(ClassContainer.FieldContainer field : input.getFields()) {

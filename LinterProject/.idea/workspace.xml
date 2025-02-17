@@ -6,15 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f40b7185-b2e1-4a35-895e-fbde7c658616" name="Changes" comment="attempted to cull arrows">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ASMHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ASMHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$AssociationContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$AssociationContainer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$FieldContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$FieldContainer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$MethodContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$MethodContainer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$relationshipType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$relationshipType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassPrinter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassPrinter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/Director.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/Director.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/SVGPrinter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/SVGPrinter$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/SVGPrinter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/SVGPrinter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/outputs/FullSetup.svg" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/FullSetup.svg" afterDir="false" />
