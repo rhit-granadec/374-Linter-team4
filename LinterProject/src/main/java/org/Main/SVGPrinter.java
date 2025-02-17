@@ -66,6 +66,7 @@ public class SVGPrinter {
 
         for(ClassContainer.MethodContainer method : input.getMethods()){
             source.append(" ");
+            source.append(method.access);
             source.append(method.name.replace('/', '.'));
             source.append("(");
             if(!method.inputs.isEmpty()) {

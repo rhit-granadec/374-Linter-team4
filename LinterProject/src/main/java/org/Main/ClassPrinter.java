@@ -97,10 +97,10 @@ public class ClassPrinter extends ClassVisitor {
                 methodAccess = "{abstract} ";
             }
             methodAccess += switch (method.access) {
-                case Opcodes.ACC_PUBLIC -> "public";
-                case Opcodes.ACC_PRIVATE -> "private";
-                case Opcodes.ACC_PROTECTED -> "protected";
-                default -> "package private";
+                case Opcodes.ACC_PUBLIC -> "+";
+                case Opcodes.ACC_PRIVATE -> "-";
+                case Opcodes.ACC_PROTECTED -> "#";
+                default -> "~";
             };
 
             String returnVar = descReturnParser(method.desc);
