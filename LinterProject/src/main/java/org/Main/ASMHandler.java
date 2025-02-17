@@ -9,9 +9,12 @@ import org.objectweb.asm.Type;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Queue;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class ASMHandler {
     HashSet<String> classesToAnalyze;
+    Pattern javaPattern = Pattern.compile("^java");
 
     public ArrayList<ClassContainer> CompileFiles(Queue<String> classNames) {
         classesToAnalyze = new HashSet<String>(classNames);
@@ -19,6 +22,10 @@ public class ASMHandler {
         try {
             while(!classNames.isEmpty()) {
                 String classToAnalyze = classNames.poll();
+                Matcher m = javaPattern.matcher(classToAnalyze);
+                if(m.find()) {
+                    continue;
+                }
                 ClassPrinter cp = new ClassPrinter();
                 try{
                     ClassReader cr = new ClassReader(classToAnalyze);
@@ -38,6 +45,13 @@ public class ASMHandler {
                             classNames.offer(cName);
                             classesToAnalyze.add(cName);
 //                            System.out.println("Added class " + cName);
+                        }
+                    }
+                    for(String variable : cp.getVariables()) {
+                        if(!classesToAnalyze.contains(variable)) {
+                            System.out.println(variable);
+                            classNames.offer(variable);
+                            classesToAnalyze.add(variable);
                         }
                     }
                 } catch (Exception e) {

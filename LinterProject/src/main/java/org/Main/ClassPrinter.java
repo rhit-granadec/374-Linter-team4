@@ -3,12 +3,15 @@ package org.Main;
 import org.objectweb.asm.*;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 
 import static org.objectweb.asm.Opcodes.ASM7;
 
 public class ClassPrinter extends ClassVisitor {
 
     ClassContainer CC = new ClassContainer();
+    private final Set<String> variables = new HashSet<String>();
     public ClassPrinter() {
         super(ASM7);
     }
@@ -111,9 +114,9 @@ public class ClassPrinter extends ClassVisitor {
         } else if (type == 'D') {
             return "Double";
         } else if (type == 'L'){
-//            String[] splitList = varName.split("/");
-//            String name = splitList[splitList.length-1];
-            return varName.substring(1, varName.length()-1);
+            String newVarName = varName.substring(1, varName.length()-1);
+            variables.add(newVarName);
+            return newVarName;
         } else {
             return varName;
         }
@@ -151,5 +154,9 @@ public class ClassPrinter extends ClassVisitor {
 
     public ClassContainer getClassContainer() {
         return CC;
+    }
+
+    public Set<String> getVariables() {
+        return variables;
     }
 }
