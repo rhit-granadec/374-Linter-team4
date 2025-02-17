@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f40b7185-b2e1-4a35-895e-fbde7c658616" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSSE376-HW3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraries/asm-tree-9.7.1.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinterProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LinterProject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ASMHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ASMHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ArrowAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ArrowAnalyzer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$AssociationContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$AssociationContainer.class" afterDir="false" />
@@ -36,29 +32,9 @@
       <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/requestedTest/TextEditorApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/requestedTest/TextEditorApp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/outputs/FullSetup.svg" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/FullSetup.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/ASMHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/ASMHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/ClassContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/ClassContainer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/ClassPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/ClassPrinter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/ASMHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/ArrowAnalyzer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/ClassContainer$AssociationContainer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/ClassContainer$FieldContainer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/ClassContainer$MethodContainer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/ClassContainer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/ClassPrinter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/Director.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/SVGPrinter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/analyze/Fred.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/analyze/James.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/analyze/Nothing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/analyze/old.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/analyze/person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/requestedTest/DecryptionInputStream.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/requestedTest/EncryptionOutputStream.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/requestedTest/IDecryption.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/requestedTest/IEncryption.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/requestedTest/SubstitutionCipher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/requestedTest/TextEditorApp.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,24 +52,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Github\school github\374-Linter-team4\LinterProject\libraries" />
@@ -123,5 +99,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

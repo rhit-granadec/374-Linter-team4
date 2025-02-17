@@ -86,7 +86,11 @@ public class SVGPrinter {
             source.append(className);
             String arrow = getArrow(association);
             source.append(arrow);
-            source.append(association.ClassName.replace('/', '.'));
+            String assocName = association.ClassName.replace('/', '.');
+            while(assocName.charAt(assocName.length()-1) == ']') {
+                assocName = assocName.substring(0, assocName.length()-2);
+            }
+            source.append(assocName);
             if(association.AssociationName != null) {
                 source.append(" : ");
                 source.append(association.AssociationName.replace('/', '.'));

@@ -12,11 +12,13 @@ public class ClassContainer {
 
     public class MethodContainer {
         public String name;
+        public String access;
         public String returnValue;
         public ArrayList<String> inputs;
 
-        MethodContainer(String name, String returnValue, ArrayList<String> inputs){
+        MethodContainer(String name, String access, String returnValue, ArrayList<String> inputs){
             this.name = name;
+            this.access = access;
             this.returnValue = returnValue;
             this.inputs = inputs;
         }
@@ -71,8 +73,8 @@ public class ClassContainer {
         return name;
     }
 
-    public void addMethod(String methodName, String returnValue, ArrayList<String> inputs) {
-        Methods.add(new MethodContainer(methodName, returnValue, inputs));
+    public void addMethod(String methodName, String access, String returnValue, ArrayList<String> inputs) {
+        Methods.add(new MethodContainer(methodName, access, returnValue, inputs));
     }
 
     public void addField(String fieldName, String type ) {

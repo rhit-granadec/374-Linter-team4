@@ -1,6 +1,7 @@
 package org.Main;
 
 import org.objectweb.asm.*;
+import org.objectweb.asm.tree.ClassNode;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -10,10 +11,12 @@ import static org.objectweb.asm.Opcodes.ASM7;
 
 public class ClassPrinter extends ClassVisitor {
 
+    private final ClassNode cn;
     ClassContainer CC = new ClassContainer();
     private final Set<String> variables = new HashSet<String>();
-    public ClassPrinter() {
+    public ClassPrinter(ClassNode cn) {
         super(ASM7);
+        this.cn = cn;
     }
 
     public void visit(int version, int access, String name,
@@ -79,16 +82,41 @@ public class ClassPrinter extends ClassVisitor {
 
     public MethodVisitor visitMethod(int access, String name,
                                      String desc, String signature, String[] exceptions) {
-
-//        ClassReader cr = new ClassReader(classToAnalyze);
-//        cr.accept(cp, 0);
-//        ClassContainer cc = cp.getClassContainer();
-        if(name.charAt(0) == '<') return null;
-        CC.addMethod(name, descReturnParser(desc), descVariablesParser(desc));
         return null;
     }
 
     public void visitEnd() {
+        cn.methods.forEach(method -> {
+            String methodName = method.name.trim();
+
+            String methodAccess = "";
+            if((method.access & Opcodes.ACC_STATIC) != 0) {
+                methodAccess = "{static} ";
+            }
+            if((method.access & Opcodes.ACC_ABSTRACT) != 0) {
+                methodAccess = "{abstract} ";
+            }
+            methodAccess += switch (method.access) {
+                case Opcodes.ACC_PUBLIC -> "public";
+                case Opcodes.ACC_PRIVATE -> "private";
+                case Opcodes.ACC_PROTECTED -> "protected";
+                default -> "package private";
+            };
+
+            String returnVar = descReturnParser(method.desc);
+            if(!Character.isUpperCase(returnVar.charAt(0))) {
+                CC.addAssociation(returnVar, null, ClassContainer.relationshipType.Dependency);
+            }
+
+            ArrayList<String> args = descVariablesParser(method.desc);
+            for (String arg : args) {
+                if(!Character.isUpperCase(arg.charAt(0))) {
+                    CC.addAssociation(arg, null, ClassContainer.relationshipType.Dependency);
+                }
+            }
+
+            CC.addMethod(methodName, methodAccess, returnVar, args);
+        });
     }
 
     private String variableParser(String varName) {
