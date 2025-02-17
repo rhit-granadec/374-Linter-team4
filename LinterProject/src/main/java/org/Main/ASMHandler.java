@@ -37,7 +37,7 @@ public class ASMHandler {
                     cr.accept(cp, 0);
                     ClassContainer cc = cp.getClassContainer();
 
-                    inspectMethods(classNode, cc);
+//                    inspectMethods(classNode, cc);
 
                     classContainers.add(cc);
                     for(ClassContainer.AssociationContainer assoc : cc.getAssociations()) {
@@ -45,13 +45,19 @@ public class ASMHandler {
                         if(!analyzedClasses.contains(cName)) {
 //                            System.out.println(cName);
                             classNames.offer(cName);
-                            analyzedClasses.add(cName);
+//                            analyzedClasses.add(cName);
 //                            System.out.println("Added class " + cName);
                         }
                     }
                     for(String variable : cp.getVariables()) {
-                        classNames.offer(variable);
+                        if(!analyzedClasses.contains(variable)) {
+//                            System.out.println(cName);
+                            classNames.offer(variable);
+//                            analyzedClasses.add(variable);
+//                            System.out.println("Added class " + cName);
+                        }
                     }
+                    analyzedClasses.add(classToAnalyze);
                 } catch (Exception e) {
                     System.out.println("ClassReader FILE ERROR:");
                     System.out.println(e);

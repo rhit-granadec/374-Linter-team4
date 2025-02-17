@@ -1,10 +1,11 @@
 package org.Main;
 
 import org.objectweb.asm.*;
-import org.objectweb.asm.tree.ClassNode;
+import org.objectweb.asm.tree.*;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import static org.objectweb.asm.Opcodes.ASM7;
@@ -86,7 +87,9 @@ public class ClassPrinter extends ClassVisitor {
     }
 
     public void visitEnd() {
+        //this saves the methods, and calls the analyzer for the local variables
         cn.methods.forEach(method -> {
+            analyzeLocalVars(method);
             String methodName = method.name.trim();
 
             String methodAccess = "";
@@ -117,6 +120,34 @@ public class ClassPrinter extends ClassVisitor {
 
             CC.addMethod(methodName, methodAccess, returnVar, args);
         });
+    }
+
+    private void analyzeLocalVars(MethodNode method) {
+        List<LocalVariableNode> localVariables = method.localVariables;
+        if(localVariables != null) {
+            for (LocalVariableNode lvn : localVariables) {
+                String localVarName = localVarParser(lvn.desc);
+                if (localVarName != null) {
+                    System.out.println("local var: " + localVarName);
+                    CC.addAssociation(localVarName,
+                            null,
+                            ClassContainer.relationshipType.DependencyWeak);
+                }
+            }
+        }
+    }
+
+    private String localVarParser(String varName) {
+        char type = varName.charAt(0);
+        if(type == '[') {
+            String restOfVar = localVarParser(varName.substring(1));
+            if (restOfVar != null) return restOfVar + "[]";
+        } else if (type == 'L'){
+            String newVarName = varName.substring(1, varName.length()-1);
+            variables.add(newVarName);
+            return newVarName;
+        }
+        return null;
     }
 
     private String variableParser(String varName) {
