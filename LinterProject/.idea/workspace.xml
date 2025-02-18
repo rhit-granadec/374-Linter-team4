@@ -7,6 +7,7 @@
     <list default="true" id="f40b7185-b2e1-4a35-895e-fbde7c658616" name="Changes" comment="attempted to cull arrows">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ASMHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ASMHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ArrowAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ArrowAnalyzer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$AssociationContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$AssociationContainer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$FieldContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$FieldContainer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$MethodContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$MethodContainer.class" afterDir="false" />
@@ -19,7 +20,6 @@
       <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/SVGPrinter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/SVGPrinter$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/SVGPrinter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/SVGPrinter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/SingletonIdentifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/SingletonIdentifier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outputs/FullSetup.svg" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/FullSetup.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/DuplicateArrowRemover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/DuplicateArrowRemover.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,6 +92,7 @@
       <workItem from="1739400688540" duration="1106000" />
       <workItem from="1739455114426" duration="38000" />
       <workItem from="1739455401117" duration="5659000" />
+      <workItem from="1739908693308" duration="478000" />
     </task>
     <task id="LOCAL-00001" summary="added local variable checks">
       <option name="closed" value="true" />

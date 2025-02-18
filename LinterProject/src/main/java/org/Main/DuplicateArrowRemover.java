@@ -3,7 +3,7 @@ package org.Main;
 import javax.lang.model.type.ArrayType;
 import java.util.*;
 
-public class DuplicateArrowRemover implements ClassContainerOperator{
+public class DuplicateArrowRemover implements ClassContainerOperator {
 
     @Override
     public void reworkClasses(List<ClassContainer> classList) {

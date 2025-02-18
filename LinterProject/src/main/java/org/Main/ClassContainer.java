@@ -11,6 +11,7 @@ public class ClassContainer {
     boolean isInterface = false;
     boolean isSingleton = false;
     boolean isAbusedSingleton = false;
+    boolean isDecorator = false;//z
 
     public class MethodContainer {
         public String name;
@@ -125,4 +126,13 @@ public class ClassContainer {
         setSingleton();
         isAbusedSingleton = true;
     }
+    //z
+    public void setDecorator(){
+        this.isDecorator = true;
+    }
+    //z
+    public boolean isDecorator(){
+        return isDecorator;
+    }
+
 }

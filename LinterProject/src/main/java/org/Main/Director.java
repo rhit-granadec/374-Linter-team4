@@ -29,6 +29,8 @@ public class Director {
         operationPipeline.add(new DuplicateArrowRemover());
         if (identifiers.contains("SingletonSearch"))
             operationPipeline.add(new SingletonIdentifier(identifiers.contains("SingletonAbuseSearch")));
+        if (identifiers.contains("DecoratorSearch"))//z
+            operationPipeline.add(new DecoratorIdentifier());
     }
 
     public void beginAnalysis() {
