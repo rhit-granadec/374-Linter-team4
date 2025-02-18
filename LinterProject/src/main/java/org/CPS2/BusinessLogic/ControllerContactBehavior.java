@@ -1,6 +1,6 @@
-package BusinessLogic;
+package org.CPS2.BusinessLogic;
 
-import DataSource.OrderComponent;
+import org.CPS2.DataSource.OrderComponent;
 
 public interface ControllerContactBehavior {
 	String sendOrder(OrderComponent order, int controllerId);

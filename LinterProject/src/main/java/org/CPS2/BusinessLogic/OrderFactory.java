@@ -1,18 +1,10 @@
-package BusinessLogic;
+package org.CPS2.BusinessLogic;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-import DataSource.BaseOrder;
-import DataSource.Cream;
-import DataSource.DarkRoast;
-import DataSource.Nutmeg;
-import DataSource.NutraSweet;
-import DataSource.BaseOrder;
-import DataSource.OrderComponent;
-import DataSource.PumpkinSpice;
-import DataSource.Sugar;
+import org.CPS2.DataSource.*;
 
 public class OrderFactory {
 

@@ -1,4 +1,4 @@
-package DataSource;
+package org.CPS2.DataSource;
 
 public class Milk extends OrderDecorator {
 	private static final String COMPONENT_NAME = "milk";

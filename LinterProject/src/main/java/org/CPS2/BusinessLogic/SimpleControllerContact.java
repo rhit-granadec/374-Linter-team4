@@ -1,10 +1,10 @@
-package BusinessLogic;
+package org.CPS2.BusinessLogic;
 
 import org.json.simple.JSONObject;
 import org.json.simple.parser.ParseException;
 
-import DataSource.OrderComponent;
-import Testing.TestController;
+import org.CPS2.DataSource.OrderComponent;
+import org.CPS2.Testing.TestController;
 
 public class SimpleControllerContact implements ControllerContactBehavior {
 	
@@ -44,7 +44,7 @@ public class SimpleControllerContact implements ControllerContactBehavior {
 		
 		JSONObject command = new JSONObject();
 		command.put("controller_id", controllerId);
-		command.put("orderID", new Integer(0));
+		command.put("orderID", Integer.valueOf(0));
 		command.put("DrinkName", order.getDrinkName());
 		command.put("Requesttype", "Simple");
 //		command.put("Options", options

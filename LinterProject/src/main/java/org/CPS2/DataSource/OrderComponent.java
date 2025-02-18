@@ -1,4 +1,4 @@
-package DataSource;
+package org.CPS2.DataSource;
 
 import org.json.simple.JSONObject;
 

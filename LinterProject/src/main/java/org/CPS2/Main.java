@@ -1,8 +1,10 @@
+package org.CPS2;
+
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-import Application.AppCommunicator;
+import org.CPS2.Application.AppCommunicator;
 
 public class Main {
 	

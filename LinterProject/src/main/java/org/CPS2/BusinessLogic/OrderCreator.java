@@ -1,4 +1,4 @@
-package BusinessLogic;
+package org.CPS2.BusinessLogic;
 import org.json.simple.JSONObject;
 
 import java.util.ArrayList;
@@ -7,18 +7,19 @@ import java.util.HashMap;
 import org.json.simple.JSONArray;
 import org.json.simple.parser.ParseException;
 
-import DataSource.OrderComponent;
+import org.CPS2.DataSource.OrderComponent;
+import org.CPS2.DataSource.DatabaseHandler;
 
 import org.json.simple.parser.JSONParser;
 
 public class OrderCreator {
 	private ArrayList<OrderObserver> observers;
-	DataSource.DatabaseHandler myDB;
+	DatabaseHandler myDB;
 	OrderFactory orderFactory;
 	
 	public OrderCreator() {
 		this.observers = new ArrayList<OrderObserver>();
-		this.myDB = new DataSource.DatabaseHandler();
+		this.myDB = new DatabaseHandler();
 		this.orderFactory = new OrderFactory();
 	}
 
@@ -84,7 +85,7 @@ public class OrderCreator {
 				condimentMap.put(condName, (int) condQty);
 			}
 		}
-		
+
 		OrderComponent myOrder = this.orderFactory.createDrink(drinkName, streetAddress, condimentMap);
 		
 
