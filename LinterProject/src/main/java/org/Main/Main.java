@@ -13,15 +13,13 @@ public class Main {
         String outputFilename = "FullSetup";
 
         ClassesToAnalyze = new LinkedList<String>();
-        ClassesToAnalyze.add("org.requestedTest.DecryptionInputStream");
-        ClassesToAnalyze.add("org.requestedTest.EncryptionOutputStream");
-        ClassesToAnalyze.add("org.requestedTest.IDecryption");
-        ClassesToAnalyze.add("org.requestedTest.IEncryption");
-        ClassesToAnalyze.add("org.requestedTest.SubstitutionCipher");
-        ClassesToAnalyze.add("org.requestedTest.TextEditorApp");
-
-//        ClassesToAnalyze.add("org.Main.Main");
-        //        ClassesToAnalyze.add("java.util.LinkedList");
+//        ClassesToAnalyze.add("org.requestedTest.DecryptionInputStream");
+//        ClassesToAnalyze.add("org.requestedTest.EncryptionOutputStream");
+//        ClassesToAnalyze.add("org.requestedTest.IDecryption");
+//        ClassesToAnalyze.add("org.requestedTest.IEncryption");
+//        ClassesToAnalyze.add("org.requestedTest.SubstitutionCipher");
+//        ClassesToAnalyze.add("org.requestedTest.TextEditorApp");
+        ClassesToAnalyze.add("org.CPS2.Main");
 
         HashSet<String> identifiers = new HashSet<String>();
         identifiers.add("SingletonSearch");

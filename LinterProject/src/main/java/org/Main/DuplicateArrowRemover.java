@@ -52,5 +52,3 @@ public class DuplicateArrowRemover implements ClassContainerOperator {
         return false;
     }
 }
-
-//.contains(classToAnalyze.replace('/', '.'))
