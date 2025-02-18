@@ -1,11 +1,11 @@
-package Application;
+package org.CPS2.Application;
 import java.util.LinkedList;
 import java.util.Queue;
 
 import org.json.simple.JSONObject;
 
-import BusinessLogic.OrderCreator;
-import BusinessLogic.OrderObserver;; 
+import org.CPS2.BusinessLogic.OrderCreator;
+import org.CPS2.BusinessLogic.OrderObserver;;
 
 public class AppCommunicator implements OrderObserver{
 	OrderCreator orderCreator;

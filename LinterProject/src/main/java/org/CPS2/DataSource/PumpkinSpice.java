@@ -1,4 +1,4 @@
-package DataSource;
+package org.CPS2.DataSource;
 
 public class PumpkinSpice extends OrderDecorator {
 	private static final boolean isOption = false;

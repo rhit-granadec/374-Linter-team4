@@ -1,10 +1,10 @@
-package BusinessLogic;
+package org.CPS2.BusinessLogic;
 
 import org.json.simple.JSONObject;
 import org.json.simple.parser.ParseException;
 
-import DataSource.OrderComponent;
-import Testing.TestController;
+import org.CPS2.DataSource.OrderComponent;
+import org.CPS2.Testing.TestController;
 
 public class ProgrammableControllerContact implements ControllerContactBehavior{
 	@Override

@@ -1,4 +1,4 @@
-package JUnitTests;
+package org.CPS2.JUnitTests;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -7,7 +7,7 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.junit.jupiter.api.Test;
 
-import Application.AppCommunicator;
+import org.CPS2.Application.AppCommunicator;
 
 class MyTestCases {
 
