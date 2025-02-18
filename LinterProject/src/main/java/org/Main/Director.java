@@ -26,6 +26,7 @@ public class Director {
 
     public void composeAnalysisPipeline(Set<String> identifiers){
         operationPipeline.add(new ArrowAnalyzer());
+        operationPipeline.add(new JavaArrowRemover());
         operationPipeline.add(new DuplicateArrowRemover());
         if (identifiers.contains("SingletonSearch"))
             operationPipeline.add(new SingletonIdentifier(identifiers.contains("SingletonAbuseSearch")));

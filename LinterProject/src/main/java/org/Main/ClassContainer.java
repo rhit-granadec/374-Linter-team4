@@ -5,7 +5,6 @@ import java.util.ArrayList;
 public class ClassContainer {
 
     private String name;
-    private String fullName;
     private ArrayList<MethodContainer> Methods;
     boolean isAbstract = false;
     boolean isInterface = false;
