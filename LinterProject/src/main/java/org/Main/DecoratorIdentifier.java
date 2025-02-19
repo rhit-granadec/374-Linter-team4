@@ -15,6 +15,8 @@ public class DecoratorIdentifier implements ClassContainerOperator {
                 }
             }
 
+
+
             if (implementedInterfaces.isEmpty()) {
                 continue;
             }

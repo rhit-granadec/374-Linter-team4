@@ -5,27 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f40b7185-b2e1-4a35-895e-fbde7c658616" name="Changes" comment="fixed imports?">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Main/BlacklistArrowRemover.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/json_simple_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libraries/json-simple-1.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/CPS2/Application/AppCommunicator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/CPS2/BusinessLogic/AdvancedControllerContact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/CPS2/BusinessLogic/ControllerContactBehavior.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/CPS2/BusinessLogic/OrderCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/CPS2/BusinessLogic/OrderFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/CPS2/BusinessLogic/OrderObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/CPS2/BusinessLogic/ProgrammableControllerContact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/CPS2/BusinessLogic/SimpleControllerContact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/CPS2/DataSource/BaseOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/CPS2/DataSource/Cream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/CPS2/DataSource/DarkRoast.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/CPS2/DataSource/DatabaseHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/CPS2/DataSource/Milk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/CPS2/DataSource/Nutmeg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/CPS2/DataSource/NutraSweet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/CPS2/DataSource/OrderComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/CPS2/DataSource/OrderDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/CPS2/DataSource/PumpkinSpice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/CPS2/DataSource/Sugar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/CPS2/JUnitTests/Milestone3Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/CPS2/JUnitTests/MyTestCases.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/CPS2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/CPS2/Testing/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Main/JavaArrowRemover.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinterProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LinterProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ASMHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ASMHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$AssociationContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$AssociationContainer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$FieldContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$FieldContainer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$MethodContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$MethodContainer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$relationshipType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$relationshipType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/Director.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/Director.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/SVGPrinter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/SVGPrinter$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/SVGPrinter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/SVGPrinter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/SingletonIdentifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/SingletonIdentifier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outputs/FullSetup.svg" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/FullSetup.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/ASMHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/ASMHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/ClassContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/ClassContainer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/DecoratorIdentifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/DecoratorIdentifier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/Director.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/DuplicateArrowRemover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/DuplicateArrowRemover.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/SVGPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/SVGPrinter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/SingletonIdentifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/SingletonIdentifier.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +53,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="Fixed-imports" />
+        <entry key="$PROJECT_DIR$/.." value="f2c7ff357ace8095b748acd7580ace880800d12f" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -66,7 +77,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "f2c7ff35",
+    "git-widget-placeholder": "Merging Blacklist-Update",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/walkosj/Documents/RHIT 2024-25/2 Winter/CSSE 374/Project/374-Linter-team4/LinterProject/src/main/java/org/CPS2",
@@ -106,7 +117,7 @@
       <workItem from="1739400688540" duration="1106000" />
       <workItem from="1739455114426" duration="38000" />
       <workItem from="1739455401117" duration="5659000" />
-      <workItem from="1739908693308" duration="12680000" />
+      <workItem from="1739908693308" duration="13367000" />
     </task>
     <task id="LOCAL-00001" summary="added local variable checks">
       <option name="closed" value="true" />
