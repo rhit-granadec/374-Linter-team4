@@ -13,15 +13,16 @@ import java.util.regex.Pattern;
 
 public class ASMHandler {
     HashSet<String> analyzedClasses;
-    Pattern javaPattern = Pattern.compile("^java");
+    Pattern blacklistPattern;
 
-    public ArrayList<ClassContainer> CompileFiles(Queue<String> classNames) {
-        analyzedClasses = new HashSet<String>();
+    public ArrayList<ClassContainer> CompileFiles(Queue<String> classNames, Pattern blacklistPattern) {
+        this.blacklistPattern = blacklistPattern;
+        analyzedClasses = new HashSet<>();
         ArrayList<ClassContainer>  classContainers= new ArrayList<ClassContainer>();
         try {
             while(!classNames.isEmpty()) {
                 String classToAnalyze = classNames.poll();
-                Matcher m = javaPattern.matcher(classToAnalyze);
+                Matcher m = blacklistPattern.matcher(classToAnalyze);
                 if(m.find()) {
                     continue;
                 }
@@ -44,6 +45,9 @@ public class ASMHandler {
                     classContainers.add(cc);
                     for(ClassContainer.AssociationContainer assoc : cc.getAssociations()) {
                         String cName = assoc.ClassName;
+                        while(cName.charAt(cName.length()-1) == ']') {
+                            cName = cName.substring(0, cName.length()-2);
+                        }
                         if(!analyzedClasses.contains(cName)) {
 //                            System.out.println(cName);
                             classNames.offer(cName);
@@ -62,6 +66,7 @@ public class ASMHandler {
                     analyzedClasses.add(classToAnalyze);
                 } catch (Exception e) {
                     System.out.println("ClassReader FILE ERROR:");
+                    System.out.println("Can't find " + classToAnalyze);
                     System.out.println(e);
                     return null;
                 }

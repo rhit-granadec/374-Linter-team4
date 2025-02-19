@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Queue;
 import java.util.Set;
+import java.util.regex.Pattern;
 
 public class Director {
     static String OutputPath = "outputs/";
@@ -11,10 +12,20 @@ public class Director {
     private final ASMHandler ASMInterface = new ASMHandler();
     private final Queue<String> ClassesToAnalyze;
     private final ArrayList<ClassContainerOperator> operationPipeline = new ArrayList<ClassContainerOperator>();
+    private final Pattern blacklistPattern;
 
     public Director(Queue<String> ClassesToAnalyze,
                     String fileName,
-                    Set<String> identifiers) {
+                    Set<String> identifiers,
+                    List<String> blacklist) {
+        StringBuilder patternBuilder = new StringBuilder("^(");
+        for(String blName : blacklist) {
+            patternBuilder.append(blName.replace(".", "(/|\\.)"));
+            patternBuilder.append("|");
+        }
+        patternBuilder.deleteCharAt(patternBuilder.length() - 1);
+        patternBuilder.append(")");
+        blacklistPattern = Pattern.compile(patternBuilder.toString());
         String fullOutputFile = OutputPath + fileName + ".svg";
         PUMLInterface = new SVGPrinter(fullOutputFile);
 
@@ -26,6 +37,7 @@ public class Director {
 
     public void composeAnalysisPipeline(Set<String> identifiers){
         operationPipeline.add(new ArrowAnalyzer());
+        operationPipeline.add(new BlacklistArrowRemover(blacklistPattern));
         operationPipeline.add(new DuplicateArrowRemover());
         if (identifiers.contains("SingletonSearch"))
             operationPipeline.add(new SingletonIdentifier(identifiers.contains("SingletonAbuseSearch")));
@@ -44,7 +56,7 @@ public class Director {
     }
 
     public ArrayList<ClassContainer> invokeASM() {
-        return ASMInterface.CompileFiles(ClassesToAnalyze);
+        return ASMInterface.CompileFiles(ClassesToAnalyze, blacklistPattern);
     }
 
     public void invokePUML(ArrayList<ClassContainer> ClassDetails) {

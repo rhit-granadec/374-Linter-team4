@@ -1,0 +1,34 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_2_19_2025_2_55_PM_[Changes]1" date="1739994994478" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_19_2025_2_55_PM_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 2/19/2025 2:55 PM [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/LinterProject/org/Main/Main.class" />
+    <option name="AFTER_PATH" value="out/production/LinterProject/org/Main/Main.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_19_2025_2_55_PM_[Changes]1/Main.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/LinterProject/org/Main/ClassContainer.class" />
+    <option name="AFTER_PATH" value="out/production/LinterProject/org/Main/ClassContainer.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_19_2025_2_55_PM_[Changes]1/ClassContainer.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/LinterProject/org/Main/SVGPrinter$1.class" />
+    <option name="AFTER_PATH" value="out/production/LinterProject/org/Main/SVGPrinter$1.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_19_2025_2_55_PM_[Changes]1/SVGPrinter$1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/LinterProject/org/Main/ASMHandler.class" />
+    <option name="AFTER_PATH" value="out/production/LinterProject/org/Main/ASMHandler.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_19_2025_2_55_PM_[Changes]1/ASMHandler.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/LinterProject/org/Main/Director.class" />
+    <option name="AFTER_PATH" value="out/production/LinterProject/org/Main/Director.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_19_2025_2_55_PM_[Changes]1/Director.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/LinterProject/org/Main/SVGPrinter.class" />
+    <option name="AFTER_PATH" value="out/production/LinterProject/org/Main/SVGPrinter.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_19_2025_2_55_PM_[Changes]1/SVGPrinter.class" />
+  </binary>
+</changelist>

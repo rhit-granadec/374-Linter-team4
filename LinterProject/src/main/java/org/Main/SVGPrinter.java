@@ -72,8 +72,11 @@ public class SVGPrinter {
         for(ClassContainer.MethodContainer method : input.getMethods()){
             source.append(" ");
             source.append(method.access);
-            boolean isConstructor = method.name.contains("<init>");
-            source.append(method.name.replace('/', '.').replace("<init>", trimCName));
+            boolean isConstructor = method.name.contains("<init>") || method.name.contains("<clinit>");
+            source.append(method.name
+                    .replace('/', '.')
+                    .replace("<init>", trimCName)
+                    .replace("<clinit>", trimCName));
             source.append("(");
             if(!method.inputs.isEmpty()) {
                 for (String methodInput : method.inputs) {
