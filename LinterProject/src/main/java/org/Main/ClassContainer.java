@@ -44,10 +44,24 @@ public class ClassContainer {
         public String ClassName;
         public String AssociationName;
         public relationshipType relationshipType;
+        //z
+        public String LCardinality;
+        public String RCardinality;
         AssociationContainer(String className, String associationName, relationshipType relationshipType){
             this.ClassName = className;
             this.AssociationName = associationName;
             this.relationshipType = relationshipType;
+            //z
+            this.RCardinality = "";
+            this.LCardinality = "";
+        }
+        //z
+        public void setLCardinality(String card) {
+            this.LCardinality = card;
+        }
+
+        public void setRCardinality(String card) {
+            this.RCardinality = card;
         }
     }
 

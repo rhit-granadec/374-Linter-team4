@@ -95,14 +95,29 @@ public class SVGPrinter {
 
         for(ClassContainer.AssociationContainer association : input.getAssociations()) {
             source.append(className);
+            //z
+            if(association.LCardinality != null && !association.LCardinality.isEmpty()){
+                source.append(" \"" + association.LCardinality + "\" ");
+            } else {
+                source.append(" ");
+            }
+
             String arrow = getArrow(association);
             source.append(arrow);
+
+            if(association.RCardinality != null && !association.RCardinality.isEmpty()){
+                source.append(" \"" + association.RCardinality + "\" ");
+            } else {
+                source.append(" ");
+            }
+
+
             String assocName = association.ClassName.replace('/', '.');
             while(assocName.charAt(assocName.length()-1) == ']') {
                 assocName = assocName.substring(0, assocName.length()-2);
             }
             source.append(assocName);
-            if(association.AssociationName != null) {
+            if(association.AssociationName != null && !association.AssociationName.isEmpty()) {
                 source.append(" : ");
                 source.append(association.AssociationName.replace('/', '.'));
             }

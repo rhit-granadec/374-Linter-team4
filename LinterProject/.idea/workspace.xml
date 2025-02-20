@@ -5,21 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f40b7185-b2e1-4a35-895e-fbde7c658616" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_jupiter_5_12_0_RC2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_19_2025_2_55_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_19_2025_2_55_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_19_2025_2_55_PM__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_19_2025_2_55_PM__Changes_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LinterProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LinterProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ASMHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ASMHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/BlacklistArrowRemover.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/BlacklistArrowRemover.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/DecoratorIdentifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/DecoratorIdentifier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/Director.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/Director.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/SVGPrinter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/SVGPrinter$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/SVGPrinter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/SVGPrinter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/SingletonIdentifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/SingletonIdentifier.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/outputs/FullSetup.svg" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/FullSetup.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/ClassContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/ClassContainer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/SVGPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/SVGPrinter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,24 +39,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Github\school github\374-Linter-team4\LinterProject\libraries" />
@@ -143,11 +133,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/org/Main/ArrowAnalyzer.java</url>
           <line>16</line>
           <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/Main/ASMHandler.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
