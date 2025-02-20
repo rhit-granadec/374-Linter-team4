@@ -33,11 +33,13 @@ public class ClassPrinter extends ClassVisitor {
         CC.setName(name);
 
         int slashSuperName = superName.lastIndexOf("/");
-        String parsedSuperName;
+        //String parsedSuperName;
+        String parsedSuperName = (slashSuperName == -1) ? superName : superName.substring(slashSuperName+1);
+
         if(slashSuperName == -1) parsedSuperName = superName;
         else parsedSuperName = superName.substring(slashSuperName+1);
         if(!parsedSuperName.equals("Object") ) {
-            CC.addAssociation(superName, null, ClassContainer.relationshipType.Extension);
+            CC.addAssociation(superName, null, ClassContainer.relationshipType.Extension, "1", "1");
         }
 
         for(String singleInterface : interfaces) {
@@ -45,9 +47,10 @@ public class ClassPrinter extends ClassVisitor {
 //            String parsedInterface;
 //            if(slashInterfaceName == -1) parsedInterface = singleInterface;
 //            else parsedInterface = singleInterface.substring(slashInterfaceName+1);
-            CC.addAssociation(singleInterface, null, ClassContainer.relationshipType.Implementation);
+            CC.addAssociation(singleInterface, null, ClassContainer.relationshipType.Implementation,"1","1");
         }
     }
+
 
     public void visitSource(String source, String debug) {
         //has filename information
@@ -75,11 +78,26 @@ public class ClassPrinter extends ClassVisitor {
         //looks for specific inner classes. may need to leverage in some areas.
     }
 
+//    public FieldVisitor visitField(int access, String name, String desc,
+//                                   String signature, Object value) {
+//        CC.addField(name, variableParser(desc));
+//        return null;
+//    }
+
     public FieldVisitor visitField(int access, String name, String desc,
                                    String signature, Object value) {
-        CC.addField(name, variableParser(desc));
+        String fieldType = variableParser(desc);
+        CC.addField(name, fieldType);
+
+        if(fieldType.endsWith("[]")) {
+            CC.addAssociation(fieldType, name, ClassContainer.relationshipType.Dependency, "1", "0..*");
+        } else {
+            CC.addAssociation(fieldType, name, ClassContainer.relationshipType.Dependency, "1", "1");
+        }
         return null;
     }
+
+
 
     public MethodVisitor visitMethod(int access, String name,
                                      String desc, String signature, String[] exceptions) {

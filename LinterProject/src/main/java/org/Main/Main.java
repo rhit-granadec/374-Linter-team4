@@ -63,7 +63,8 @@ public class Main {
 
     private static void resetBlacklist() {
         blacklist.clear();
-        blacklist.add("java.lang.Object"); // required
+        blacklist.add("java.lang.Object"); // required due to superclasses breaking
+        blacklist.add("[A-Z]"); // required due to primitives not having class files
         blacklist.add("java"); // recommended
     }
 

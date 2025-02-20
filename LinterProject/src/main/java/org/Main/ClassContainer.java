@@ -97,8 +97,19 @@ public class ClassContainer {
         Fields.add(new FieldContainer(fieldName, type));
     }
 
+//    public void addAssociation(String className, String associationName, relationshipType relationshipType) {
+//        Associations.add(new AssociationContainer(className, associationName, relationshipType));
+//    }
+
+    public void addAssociation(String className, String associationName, relationshipType relationshipType, String leftCard, String rightCard) {
+        AssociationContainer assoc = new AssociationContainer(className, associationName, relationshipType);
+        assoc.setLCardinality(leftCard);
+        assoc.setRCardinality(rightCard);
+        Associations.add(assoc);
+    }
+
     public void addAssociation(String className, String associationName, relationshipType relationshipType) {
-        Associations.add(new AssociationContainer(className, associationName, relationshipType));
+        addAssociation(className, associationName, relationshipType, "", "");
     }
 
     public ArrayList<MethodContainer> getMethods() {

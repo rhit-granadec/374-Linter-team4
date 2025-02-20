@@ -23,7 +23,8 @@ public class ArrowAnalyzer implements ClassContainerOperator{
             for(ClassContainer.MethodContainer method : methods) {
                 for(String input : method.inputs) {
                     if(names.contains(input)) {
-                        containedClass.addAssociation(input, null, ClassContainer.relationshipType.Dependency);
+//                        containedClass.addAssociation(input, null, ClassContainer.relationshipType.Dependency);
+                        containedClass.addAssociation(input, null, ClassContainer.relationshipType.Dependency, "1", "1");
                     }
                 }
             }
