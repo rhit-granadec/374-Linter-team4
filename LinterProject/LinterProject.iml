@@ -10,5 +10,6 @@
     <orderEntry type="library" name="libraries" level="project" />
     <orderEntry type="library" name="asm-tree-9.7.1" level="project" />
     <orderEntry type="library" name="json-simple-1.1.1 (2)" level="project" />
+    <orderEntry type="library" name="junit-jupiter-5.12.0-RC2" level="project" />
   </component>
 </module>

@@ -4,113 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f40b7185-b2e1-4a35-895e-fbde7c658616" name="Changes" comment="attempted to cull arrows">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/json_simple_1_1_1__2_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/Main/JavaArrowRemover.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/decorator/DecoyDuck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/decorator/DuckCall.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/decorator/DuckSimulator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/decorator/Goose.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/decorator/GooseAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/decorator/MallardDuck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/decorator/QuackCounter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/decorator/Quackable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/decorator/RedheadDuck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/decorator/RubberDuck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/Main/ASMHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/Main/ArrowAnalyzer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/Main/ClassContainer$AssociationContainer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/Main/ClassContainer$FieldContainer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/Main/ClassContainer$MethodContainer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/Main/ClassContainer$relationshipType.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/Main/ClassContainer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/Main/ClassContainerOperator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/Main/ClassPrinter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/Main/DecoratorIdentifier.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/Main/Director.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/Main/DuplicateArrowRemover.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/Main/JavaArrowRemover.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/Main/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/Main/SVGPrinter$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/Main/SVGPrinter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/Main/SingletonIdentifier.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/analyze/Fred.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/analyze/James.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/analyze/Nothing.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/analyze/old.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/analyze/person.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/decorator/DecoyDuck.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/decorator/DuckCall.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/decorator/DuckSimulator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/decorator/Goose.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/decorator/GooseAdapter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/decorator/MallardDuck.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/decorator/QuackCounter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/decorator/Quackable.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/decorator/RedheadDuck.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/decorator/RubberDuck.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/requestedTest/DecryptionInputStream.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/requestedTest/EncryptionOutputStream.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/requestedTest/IDecryption.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/requestedTest/IEncryption.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/requestedTest/SubstitutionCipher.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/requestedTest/TextEditorApp.class" afterDir="false" />
+    <list default="true" id="f40b7185-b2e1-4a35-895e-fbde7c658616" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_jupiter_5_12_0_RC2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_19_2025_2_55_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_19_2025_2_55_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_19_2025_2_55_PM__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_19_2025_2_55_PM__Changes_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSSE376-HW3.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/LinterProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LinterProject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ASMHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ASMHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ArrowAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ArrowAnalyzer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$AssociationContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$AssociationContainer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$FieldContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$FieldContainer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$MethodContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$MethodContainer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$relationshipType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer$relationshipType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainerOperator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassContainerOperator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassPrinter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/ClassPrinter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/BlacklistArrowRemover.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/BlacklistArrowRemover.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/DecoratorIdentifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/DecoratorIdentifier.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/Director.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/Director.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/DuplicateArrowRemover.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/DuplicateArrowRemover.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/SVGPrinter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/SVGPrinter$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/SVGPrinter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/SVGPrinter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/Main/SingletonIdentifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/Main/SingletonIdentifier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/analyze/Fred.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/analyze/Fred.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/analyze/James.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/analyze/James.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/analyze/Nothing.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/analyze/Nothing.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/analyze/old.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/analyze/old.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/analyze/person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/analyze/person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/requestedTest/DecryptionInputStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/requestedTest/DecryptionInputStream.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/requestedTest/EncryptionOutputStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/requestedTest/EncryptionOutputStream.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/requestedTest/IDecryption.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/requestedTest/IDecryption.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/requestedTest/IEncryption.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/requestedTest/IEncryption.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/requestedTest/SubstitutionCipher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/requestedTest/SubstitutionCipher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LinterProject/org/requestedTest/TextEditorApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LinterProject/org/requestedTest/TextEditorApp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/outputs/FullSetup.svg" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/FullSetup.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/CPS2/Application/AppCommunicator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/CPS2/BusinessLogic/AdvancedControllerContact.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/CPS2/BusinessLogic/ControllerContactBehavior.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/CPS2/BusinessLogic/OrderCreator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/CPS2/BusinessLogic/OrderFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/CPS2/BusinessLogic/OrderObserver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/CPS2/BusinessLogic/ProgrammableControllerContact.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/CPS2/BusinessLogic/SimpleControllerContact.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/CPS2/DataSource/BaseOrder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/CPS2/DataSource/Cream.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/CPS2/DataSource/DarkRoast.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/CPS2/DataSource/DatabaseHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/CPS2/DataSource/Milk.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/CPS2/DataSource/Nutmeg.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/CPS2/DataSource/NutraSweet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/CPS2/DataSource/OrderComponent.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/CPS2/DataSource/OrderDecorator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/CPS2/DataSource/PumpkinSpice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/CPS2/DataSource/Sugar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/CPS2/JUnitTests/Milestone3Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/CPS2/JUnitTests/MyTestCases.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/CPS2/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/CPS2/Testing/TestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/BlacklistArrowRemover.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/DecoratorIdentifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/DecoratorIdentifier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +36,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="main" />
+        <entry key="$PROJECT_DIR$/.." value="Blacklist-Update" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -148,7 +56,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "xin-rui-decor-check",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -222,7 +130,7 @@
     <MESSAGE value="added local variable checks" />
     <MESSAGE value="attempted to cull arrows" />
     <MESSAGE value="reworked singleton identifier method" />
-    <option name="LAST_COMMIT_MESSAGE" value="reworked singleton identifier method" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -238,7 +146,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/Main/ASMHandler.java</url>
-          <line>27</line>
+          <line>28</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
