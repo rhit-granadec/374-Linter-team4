@@ -10,6 +10,7 @@ public class Main {
 
     public static void main(String[] args) {
         Director runner;
+        resetBlacklist();
 
         //analysis options
         HashSet<String> identifiers = new HashSet<String>();
@@ -17,42 +18,42 @@ public class Main {
         identifiers.add("SingletonAbuseSearch");
         identifiers.add("DecoratorSearch");
 
-        duckAnalysis();
+        setupDuckAnalysis();
         runner = new Director(ClassesToAnalyze,
                 outputFilename,
                 identifiers,
                 blacklist);
         runner.analyze();
 
-        selfAnalysis();
+        setupSelfAnalysis();
         runner = new Director(ClassesToAnalyze,
                 outputFilename,
                 identifiers,
                 blacklist);
         runner.analyze();
 
-        cypherAnalysis();
+        setupCypherAnalysis();
         runner = new Director(ClassesToAnalyze,
                 outputFilename,
                 identifiers,
                 blacklist);
         runner.analyze();
 
-        starbuzzAnalysis();
+        setupStarbuzzAnalysis();
         runner = new Director(ClassesToAnalyze,
                 outputFilename,
                 identifiers,
                 blacklist);
         runner.analyze();
 
-        singletonSetAnalysis();
+        setupSingletonSetAnalysis();
         runner = new Director(ClassesToAnalyze,
                 outputFilename,
                 identifiers,
                 blacklist);
         runner.analyze();
 
-        largeAppAnalysis();
+        setupLargeAppAnalysis();
         runner = new Director(ClassesToAnalyze,
                 outputFilename,
                 identifiers,
@@ -66,7 +67,7 @@ public class Main {
         blacklist.add("java"); // recommended
     }
 
-    private static void selfAnalysis() {
+    private static void setupSelfAnalysis() {
         // Self-analysis configuration
         resetBlacklist();
         blacklist.add("org.w3c");
@@ -82,7 +83,7 @@ public class Main {
         outputFilename = "self";
     }
 
-    private static void duckAnalysis() {
+    private static void setupDuckAnalysis() {
         // duck class analysis
         resetBlacklist();
         ClassesToAnalyze.add("org.decorator.DecoyDuck");
@@ -98,7 +99,7 @@ public class Main {
         outputFilename = "duck";
     }
 
-    private static void cypherAnalysis() {
+    private static void setupCypherAnalysis() {
         resetBlacklist();
         ClassesToAnalyze.add("org.requestedTest.DecryptionInputStream");
         ClassesToAnalyze.add("org.requestedTest.EncryptionOutputStream");
@@ -110,7 +111,7 @@ public class Main {
     }
 
 
-    private static void starbuzzAnalysis() {
+    private static void setupStarbuzzAnalysis() {
         resetBlacklist();
         ClassesToAnalyze.add("headfirst.decorator.io.InputTest");
         ClassesToAnalyze.add("headfirst.decorator.io.LowerCaseInputStream");
@@ -129,7 +130,7 @@ public class Main {
         outputFilename = "starbuzz";
     }
 
-    private static void singletonSetAnalysis() {
+    private static void setupSingletonSetAnalysis() {
         resetBlacklist();
         ClassesToAnalyze.add("headfirst.singleton.chocolate.ChocolateBoiler");
         ClassesToAnalyze.add("headfirst.singleton.chocolate.ChocolateController");
@@ -153,7 +154,7 @@ public class Main {
         outputFilename = "singleton";
     }
 
-    private static void largeAppAnalysis() {
+    private static void setupLargeAppAnalysis() {
         resetBlacklist();
         blacklist.add("org.json.simple");
 
