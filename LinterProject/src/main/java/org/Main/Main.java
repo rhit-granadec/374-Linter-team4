@@ -22,36 +22,42 @@ public class Main {
                 outputFilename,
                 identifiers,
                 blacklist);
+        runner.analyze();
 
         selfAnalysis();
         runner = new Director(ClassesToAnalyze,
                 outputFilename,
                 identifiers,
                 blacklist);
+        runner.analyze();
 
         cypherAnalysis();
         runner = new Director(ClassesToAnalyze,
                 outputFilename,
                 identifiers,
                 blacklist);
+        runner.analyze();
 
         starbuzzAnalysis();
         runner = new Director(ClassesToAnalyze,
                 outputFilename,
                 identifiers,
                 blacklist);
+        runner.analyze();
 
         singletonSetAnalysis();
         runner = new Director(ClassesToAnalyze,
                 outputFilename,
                 identifiers,
                 blacklist);
+        runner.analyze();
 
         largeAppAnalysis();
         runner = new Director(ClassesToAnalyze,
                 outputFilename,
                 identifiers,
                 blacklist);
+        runner.analyze();
     }
 
     private static void resetBlacklist() {

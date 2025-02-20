@@ -32,7 +32,6 @@ public class Director {
         this.ClassesToAnalyze = ClassesToAnalyze;
 
         composeAnalysisPipeline(identifiers);
-        beginAnalysis();
     }
 
     public void composeAnalysisPipeline(Set<String> identifiers){
@@ -45,7 +44,7 @@ public class Director {
             operationPipeline.add(new DecoratorIdentifier());
     }
 
-    public void beginAnalysis() {
+    public void analyze() {
         ArrayList<ClassContainer> classContainers = invokeASM();
 
         for (ClassContainerOperator CCO : operationPipeline) {
