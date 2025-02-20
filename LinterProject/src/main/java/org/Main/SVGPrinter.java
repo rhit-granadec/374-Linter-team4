@@ -13,6 +13,7 @@ public class SVGPrinter {
     public SVGPrinter(String outputFile) {
         this.outputFile = outputFile;
     }
+    int asCount = 0;
     public void output(ArrayList<ClassContainer> sourceClasses) {
         String source = processClassContainers(sourceClasses);
         try {
@@ -55,10 +56,15 @@ public class SVGPrinter {
         if(input.isInterface) source.append("interface ");
         else source.append("class ");
         source.append(className);
-        if(input.isSingleton()) source.append(" <<Singleton>>#F88;line:red");
+
+        if(input.isSingleton()) {
+            source.append(" <<Singleton>>#F88;line:red");
+        }
 //z
-        if(input.isDecorator())
+        if(input.isDecorator()) {
             source.append(" <<Decorator>> #88F;line:blue");
+        }
+
         source.append(" {\n");
 
         for(ClassContainer.FieldContainer field : input.getFields()) {
@@ -93,11 +99,19 @@ public class SVGPrinter {
 
         source.append("}\n");
 
+        if(input.isAbusedSingleton()) {
+            source.append("\nnote \"This class might be an abused singleton.\" as note")
+                    .append(asCount).append("\n");
+            source.append(input.getName().replace('/', '.'))
+                    .append(" .. note").append(asCount).append("\n");
+            asCount++;
+        }
+
         for(ClassContainer.AssociationContainer association : input.getAssociations()) {
             source.append(className);
             //z
             if(association.LCardinality != null && !association.LCardinality.isEmpty()){
-                source.append(" \"" + association.LCardinality + "\" ");
+                source.append(" \"").append(association.LCardinality).append("\" ");
             } else {
                 source.append(" ");
             }
@@ -106,7 +120,7 @@ public class SVGPrinter {
             source.append(arrow);
 
             if(association.RCardinality != null && !association.RCardinality.isEmpty()){
-                source.append(" \"" + association.RCardinality + "\" ");
+                source.append(" \"").append(association.RCardinality).append("\" ");
             } else {
                 source.append(" ");
             }
