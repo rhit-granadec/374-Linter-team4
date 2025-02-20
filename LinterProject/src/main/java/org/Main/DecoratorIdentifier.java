@@ -44,7 +44,19 @@ public class DecoratorIdentifier implements ClassContainerOperator {
                 }
             }
 
-            if (hasComponentField || hasComponentInConstructor) {
+            boolean hasDelegation = false;
+            for (ClassContainer.MethodContainer method : cc.getMethods()) {
+                if (!method.name.contains("<init>")) {
+                    String lowerName = method.name.toLowerCase();
+                    if (lowerName.contains("delegate") || lowerName.contains("wrap")) {
+                        hasDelegation = true;
+                        break;
+                    }
+                }
+            }
+
+
+            if (hasComponentField || hasComponentInConstructor ||hasDelegation) {
                 cc.setDecorator();
             }
         }
