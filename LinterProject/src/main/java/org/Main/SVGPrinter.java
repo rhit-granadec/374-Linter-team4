@@ -13,7 +13,7 @@ public class SVGPrinter {
     public SVGPrinter(String outputFile) {
         this.outputFile = outputFile;
     }
-    int asCount = 0;
+    int noteCount = 0;
     public void output(ArrayList<ClassContainer> sourceClasses) {
         String source = processClassContainers(sourceClasses);
         try {
@@ -101,10 +101,17 @@ public class SVGPrinter {
 
         if(input.isAbusedSingleton()) {
             source.append("\nnote \"This class might be an abused singleton.\" as note")
-                    .append(asCount).append("\n");
+                    .append(noteCount).append("\n");
             source.append(input.getName().replace('/', '.'))
-                    .append(" .. note").append(asCount).append("\n");
-            asCount++;
+                    .append(" .. note").append(noteCount).append("\n");
+            noteCount++;
+        }
+        if(input.getAssociations().size() > 3) {
+            source.append("\nnote \"This class has too many dependencies.\" as note")
+                    .append(noteCount).append("\n");
+            source.append(input.getName().replace('/', '.'))
+                    .append(" .. note").append(noteCount).append("\n");
+            noteCount++;
         }
 
         for(ClassContainer.AssociationContainer association : input.getAssociations()) {
