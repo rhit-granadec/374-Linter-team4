@@ -31,7 +31,7 @@ public class DecoratorIdentifier implements ClassContainerOperator {
 
             boolean hasComponentInConstructor = false;
             for (ClassContainer.MethodContainer method : cc.getMethods()) {
-                if (method.name.contains("<init>")) {
+                if (method.name.contains("<init>") || method.name.contains("<clinit>")) {
                     for (String paramType : method.inputs) {
                         if (implementedInterfaces.contains(paramType)) {
                             hasComponentInConstructor = true;

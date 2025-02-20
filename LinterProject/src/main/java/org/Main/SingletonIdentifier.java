@@ -21,7 +21,7 @@ public class SingletonIdentifier implements ClassContainerOperator{
             boolean isAbused = abuseSearch;
             for(ClassContainer.MethodContainer MC : CC.getMethods()){
                 String access = MC.access;
-                if(Objects.equals(MC.name, "<init>")){
+                if(Objects.equals(MC.name, "<init>") || Objects.equals(MC.name, "<clinit>")){
                      if(!Objects.equals(access.charAt(access.length()-1), '-')){
                         isSingleton = false;
                      }

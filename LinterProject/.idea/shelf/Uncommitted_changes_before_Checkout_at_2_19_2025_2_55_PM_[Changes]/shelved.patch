@@ -1,0 +1,26 @@
+Index: src/main/java/org/Main/BlacklistArrowRemover.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package org.Main;\r\n\r\nimport javax.lang.model.type.ArrayType;\r\nimport java.util.*;\r\nimport java.util.regex.Matcher;\r\nimport java.util.regex.Pattern;\r\n\r\npublic class JavaArrowRemover implements ClassContainerOperator {\r\n\r\n    @Override\r\n    public void reworkClasses(List<ClassContainer> classList) {\r\n        Pattern javaPattern = Pattern.compile(\"^java\");\r\n        for (ClassContainer CC: classList) {\r\n\r\n            ArrayList<ClassContainer.AssociationContainer> assocs = CC.getAssociations();\r\n            int i = 0;\r\n            HashSet<Integer> removes = new HashSet<>();\r\n            while(i < assocs.size()) {\r\n                ClassContainer.AssociationContainer assoc = assocs.get(i);\r\n                Matcher m = javaPattern.matcher(assoc.ClassName);\r\n                if(m.find()) {\r\n                    removes.add(i);\r\n                }\r\n                i++;\r\n            }\r\n\r\n            Integer[] results = new Integer[removes.size()];\r\n            removes.toArray(results);\r\n            Arrays.sort(results);\r\n\r\n            for(i = results.length-1; i >=0; i--){\r\n                assocs.remove((int) results[i]);\r\n            }\r\n\r\n            CC.setAssociations(assocs);\r\n        }\r\n    }\r\n}
+===================================================================
+diff --git a/src/main/java/org/Main/BlacklistArrowRemover.java b/src/main/java/org/Main/BlacklistArrowRemover.java
+--- a/src/main/java/org/Main/BlacklistArrowRemover.java	(revision b720f33ddbdb5c312cd40964ad221007f26fcf2d)
++++ b/src/main/java/org/Main/BlacklistArrowRemover.java	(date 1739915790859)
+@@ -1,11 +1,15 @@
+ package org.Main;
+ 
+-import javax.lang.model.type.ArrayType;
+ import java.util.*;
+ import java.util.regex.Matcher;
+ import java.util.regex.Pattern;
+ 
+-public class JavaArrowRemover implements ClassContainerOperator {
++public class BlacklistArrowRemover implements ClassContainerOperator {
++
++    List<String> blacklist;
++    public BlacklistArrowRemover(Pattern blacklist) {
++        this.blacklist = blacklist;
++    }
+ 
+     @Override
+     public void reworkClasses(List<ClassContainer> classList) {

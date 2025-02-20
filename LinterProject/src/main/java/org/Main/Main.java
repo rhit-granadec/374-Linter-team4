@@ -1,9 +1,6 @@
 package org.Main;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 public class Main {
 
@@ -11,8 +8,22 @@ public class Main {
     public static void main(String[] args) {
 
         String outputFilename = "FullSetup";
-
+        List<String> blacklist = new ArrayList<>();
         ClassesToAnalyze = new LinkedList<String>();
+        blacklist.add("java.lang.Object"); // required
+        blacklist.add("java"); // recommended
+
+        // Self-analysis configuration
+        blacklist.add("org.w3c");
+        blacklist.add("net.sourceforge.plantuml.klimt");
+        blacklist.add("net.sourceforge.plantuml.tim");
+        blacklist.add("net.sourceforge.plantuml.file");
+        blacklist.add("net.sourceforge.plantuml.preproc");
+        blacklist.add("net.sourceforge.plantuml.core");
+        blacklist.add("net.sourceforge.plantuml.text");
+        blacklist.add("org.objectweb.asm");
+        ClassesToAnalyze.add("org.Main.Main");
+
 //        ClassesToAnalyze.add("org.requestedTest.DecryptionInputStream");
 //        ClassesToAnalyze.add("org.requestedTest.EncryptionOutputStream");
 //        ClassesToAnalyze.add("org.requestedTest.IDecryption");
@@ -39,6 +50,7 @@ public class Main {
 
         Director runner = new Director(ClassesToAnalyze,
                 outputFilename,
-                identifiers);
+                identifiers,
+                blacklist);
     }
 }
