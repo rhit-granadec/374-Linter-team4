@@ -5,37 +5,111 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69fce962-48b7-4246-98a7-890ca7c5a293" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_19_2025_4_16_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_19_2025_4_16_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_19_2025_8_47_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_19_2025_8_47_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outputs/largeApp.svg" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/largeApp.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outputs/self.svg" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/self.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/ArrowAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/ArrowAnalyzer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/ClassPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/ClassPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/374-Linter-team4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/asm_9_7_1_1_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/asm_9_7_1_1___2_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/asm_9_7_1_1___3_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/asm_tree_9_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/asm_tree_9_7_1__2_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/asm_tree_9_7_1__3_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/json_simple_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/json_simple_1_1_1__2_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/plantuml_mit_1_2025_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/libraries/plantuml_mit_1_2025_0__2_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/decorator/io/InputTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/decorator/io/LowerCaseInputStream.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/decorator/starbuzz/Beverage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/decorator/starbuzz/CondimentDecorator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/decorator/starbuzz/DarkRoast.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/decorator/starbuzz/Decaf.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/decorator/starbuzz/Espresso.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/decorator/starbuzz/HouseBlend.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/decorator/starbuzz/Milk.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/decorator/starbuzz/Mocha.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/decorator/starbuzz/Soy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/decorator/starbuzz/StarbuzzCoffee.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/decorator/starbuzz/Whip.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/singleton/chocolate/ChocolateBoiler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/singleton/chocolate/ChocolateController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/singleton/classic/Singleton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/singleton/dcl/Singleton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/singleton/dcl/SingletonClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/singleton/stat/Singleton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/singleton/stat/SingletonClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/singleton/subclass/CoolerSingleton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/singleton/subclass/HotterSingleton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/singleton/subclass/Singleton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/singleton/subclass/SingletonTestDrive.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/singleton/threadsafe/Singleton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/org/Main/BlacklistArrowRemover.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/Application/AppCommunicator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/BusinessLogic/AdvancedControllerContact.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/BusinessLogic/ControllerContactBehavior.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/BusinessLogic/OrderCreator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/BusinessLogic/OrderFactory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/BusinessLogic/OrderObserver.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/BusinessLogic/ProgrammableControllerContact.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/BusinessLogic/SimpleControllerContact.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/DataSource/BaseOrder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/DataSource/Cream.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/DataSource/DarkRoast.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/DataSource/DatabaseHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/DataSource/Milk.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/DataSource/Nutmeg.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/DataSource/NutraSweet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/DataSource/OrderComponent.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/DataSource/OrderDecorator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/DataSource/PumpkinSpice.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/DataSource/Sugar.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/JUnitTests/Milestone3Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/JUnitTests/MyTestCases.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/Testing/TestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/starbuzz.svg" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/starbuzz.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/DecoratorIdentifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/DecoratorIdentifier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/Director.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/SVGPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/SVGPrinter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/analyze/Fred.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/analyze/James.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/analyze/Nothing.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/analyze/old.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/analyze/person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/ASMHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Main/ASMHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/Main/ArrowAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Main/ArrowAnalyzer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/ClassContainer$AssociationContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Main/ClassContainer$AssociationContainer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/ClassContainer$relationshipType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Main/ClassContainer$relationshipType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/ClassContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Main/ClassContainer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/ClassContainer$FieldContainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/ClassContainer$MethodContainer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/ClassContainerOperator.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/Main/ClassPrinter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Main/ClassPrinter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/Main/DecoratorIdentifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Main/DecoratorIdentifier.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/Main/Director.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Main/Director.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/DuplicateArrowRemover.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/JavaArrowRemover.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/Main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Main/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/Main/SVGPrinter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Main/SVGPrinter$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/Main/SVGPrinter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Main/SVGPrinter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/SingletonIdentifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Main/SingletonIdentifier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/analyze/Fred.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/analyze/James.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/analyze/Nothing.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/analyze/old.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/analyze/person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/decorator/DecoyDuck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/decorator/DuckCall.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/decorator/DuckSimulator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/decorator/Goose.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/decorator/GooseAdapter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/decorator/MallardDuck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/decorator/QuackCounter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/decorator/Quackable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/decorator/RedheadDuck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/decorator/RubberDuck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/requestedTest/DecryptionInputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/requestedTest/EncryptionOutputStream.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/requestedTest/IDecryption.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/requestedTest/IEncryption.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/requestedTest/SubstitutionCipher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/requestedTest/TextEditorApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,22 +119,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": -1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: -1
+}</component>
   <component name="ProjectId" id="2tPSZJf6rT0z3CBCLvAN65dDUV7" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;check-for-overextention&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "Merging check-for-overextention"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
