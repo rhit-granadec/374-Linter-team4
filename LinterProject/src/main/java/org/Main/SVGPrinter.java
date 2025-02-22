@@ -62,9 +62,7 @@ public class SVGPrinter {
 
         if(input.isSingleton()) {
             source.append(" <<Singleton>>#F88;line:red");
-        }
-//z
-        if(input.isDecorator()) {
+        } else if(input.isDecorator()) { // Z
             source.append(" <<Decorator>> #88F;line:blue");
         }
 

@@ -5,111 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69fce962-48b7-4246-98a7-890ca7c5a293" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/374-Linter-team4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/libraries/asm_9_7_1_1_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/libraries/asm_9_7_1_1___2_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/libraries/asm_9_7_1_1___3_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/libraries/asm_tree_9_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/libraries/asm_tree_9_7_1__2_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/libraries/asm_tree_9_7_1__3_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/libraries/json_simple_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/libraries/json_simple_1_1_1__2_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/libraries/plantuml_mit_1_2025_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/libraries/plantuml_mit_1_2025_0__2_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/decorator/io/InputTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/decorator/io/LowerCaseInputStream.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/decorator/starbuzz/Beverage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/decorator/starbuzz/CondimentDecorator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/decorator/starbuzz/DarkRoast.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/decorator/starbuzz/Decaf.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/decorator/starbuzz/Espresso.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/decorator/starbuzz/HouseBlend.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/decorator/starbuzz/Milk.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/decorator/starbuzz/Mocha.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/decorator/starbuzz/Soy.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/decorator/starbuzz/StarbuzzCoffee.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/decorator/starbuzz/Whip.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/singleton/chocolate/ChocolateBoiler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/singleton/chocolate/ChocolateController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/singleton/classic/Singleton.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/singleton/dcl/Singleton.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/singleton/dcl/SingletonClient.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/singleton/stat/Singleton.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/singleton/stat/SingletonClient.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/singleton/subclass/CoolerSingleton.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/singleton/subclass/HotterSingleton.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/singleton/subclass/Singleton.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/singleton/subclass/SingletonTestDrive.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/headfirst/singleton/threadsafe/Singleton.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/Main/BlacklistArrowRemover.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/Application/AppCommunicator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/BusinessLogic/AdvancedControllerContact.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/BusinessLogic/ControllerContactBehavior.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/BusinessLogic/OrderCreator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/BusinessLogic/OrderFactory.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/BusinessLogic/OrderObserver.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/BusinessLogic/ProgrammableControllerContact.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/BusinessLogic/SimpleControllerContact.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/DataSource/BaseOrder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/DataSource/Cream.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/DataSource/DarkRoast.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/DataSource/DatabaseHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/DataSource/Milk.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/DataSource/Nutmeg.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/DataSource/NutraSweet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/DataSource/OrderComponent.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/DataSource/OrderDecorator.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/DataSource/PumpkinSpice.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/DataSource/Sugar.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/JUnitTests/Milestone3Test.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/JUnitTests/MyTestCases.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/otherselection/Testing/TestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/singleton.svg" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/singleton.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/outputs/starbuzz.svg" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/starbuzz.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/DecoratorIdentifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/DecoratorIdentifier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/Director.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/ArrowAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Main/ArrowAnalyzer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/ClassContainer$FieldContainer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/ClassContainer$MethodContainer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/ClassContainerOperator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/ClassPrinter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Main/ClassPrinter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/DecoratorIdentifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Main/DecoratorIdentifier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/Director.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Main/Director.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/DuplicateArrowRemover.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/JavaArrowRemover.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Main/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/SVGPrinter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Main/SVGPrinter$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/SVGPrinter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Main/SVGPrinter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/analyze/Fred.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/analyze/James.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/analyze/Nothing.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/analyze/old.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/analyze/person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/decorator/DecoyDuck.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/decorator/DuckCall.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/decorator/DuckSimulator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/decorator/Goose.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/decorator/GooseAdapter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/decorator/MallardDuck.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/decorator/QuackCounter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/decorator/Quackable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/decorator/RedheadDuck.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/decorator/RubberDuck.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/requestedTest/DecryptionInputStream.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/requestedTest/EncryptionOutputStream.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/requestedTest/IDecryption.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/requestedTest/IEncryption.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/requestedTest/SubstitutionCipher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/requestedTest/TextEditorApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/SingletonIdentifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/SingletonIdentifier.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,10 +21,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: -1
-}</component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
   <component name="ProjectId" id="2tPSZJf6rT0z3CBCLvAN65dDUV7" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -130,11 +31,27 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Merging check-for-overextention"
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.24978.46" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-IU-243.24978.46" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -143,7 +60,32 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1740250499957</updated>
+      <workItem from="1740257488282" duration="2025000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/Main/SingletonIdentifier.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/Main/SingletonIdentifier.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/Main/SingletonIdentifier.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

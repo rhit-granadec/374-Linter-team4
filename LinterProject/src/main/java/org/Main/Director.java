@@ -7,7 +7,7 @@ import java.util.Set;
 import java.util.regex.Pattern;
 
 public class Director {
-    static String OutputPath = "LinterProject/outputs/";
+    static String OutputPath = "outputs/";
     private final SVGPrinter PUMLInterface;
     private final ASMHandler ASMInterface = new ASMHandler();
     private final Queue<String> ClassesToAnalyze;
