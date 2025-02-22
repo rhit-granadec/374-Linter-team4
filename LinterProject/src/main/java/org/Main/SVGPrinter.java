@@ -5,12 +5,15 @@ import net.sourceforge.plantuml.SourceStringReader;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileWriter;
+import java.lang.reflect.Array;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 
 public class SVGPrinter {
     private String outputFile;
-    public SVGPrinter(String outputFile) {
+    private int overUseThreshold;
+    public SVGPrinter(String outputFile, int overUseThreshold) {
+        this.overUseThreshold = overUseThreshold;
         this.outputFile = outputFile;
     }
     int noteCount = 0;
@@ -106,7 +109,15 @@ public class SVGPrinter {
                     .append(" .. note").append(noteCount).append("\n");
             noteCount++;
         }
-        if(input.getAssociations().size() > 3) {
+
+        int dependencyCount = 0;
+        ArrayList<ClassContainer.AssociationContainer> associations = input.getAssociations();
+        for (ClassContainer.AssociationContainer AC : associations) {
+            if(AC.relationshipType == ClassContainer.relationshipType.DependencyWeak) dependencyCount++;
+            else if (AC.relationshipType == ClassContainer.relationshipType.Dependency) dependencyCount++;
+        }
+
+        if(dependencyCount > overUseThreshold) {
             source.append("\nnote \"This class has too many dependencies.\" as note")
                     .append(noteCount).append("\n");
             source.append(input.getName().replace('/', '.'))
@@ -115,9 +126,12 @@ public class SVGPrinter {
         }
 
         for(ClassContainer.AssociationContainer association : input.getAssociations()) {
+            boolean isDependency = association.relationshipType == ClassContainer.relationshipType.Dependency
+                    || association.relationshipType == ClassContainer.relationshipType.DependencyWeak;
+
             source.append(className);
             //z
-            if(association.LCardinality != null && !association.LCardinality.isEmpty()){
+            if(!isDependency && association.LCardinality != null && !association.LCardinality.isEmpty()){
                 source.append(" \"").append(association.LCardinality).append("\" ");
             } else {
                 source.append(" ");
@@ -126,7 +140,7 @@ public class SVGPrinter {
             String arrow = getArrow(association);
             source.append(arrow);
 
-            if(association.RCardinality != null && !association.RCardinality.isEmpty()){
+            if(!isDependency && association.RCardinality != null && !association.RCardinality.isEmpty()){
                 source.append(" \"").append(association.RCardinality).append("\" ");
             } else {
                 source.append(" ");

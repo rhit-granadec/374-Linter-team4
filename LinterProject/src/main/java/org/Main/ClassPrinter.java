@@ -89,15 +89,37 @@ public class ClassPrinter extends ClassVisitor {
         String fieldType = variableParser(desc);
         CC.addField(name, fieldType);
 
+//        if(fieldType.endsWith("[]")) {
+//            CC.addAssociation(fieldType, name, ClassContainer.relationshipType.Dependency, "1", "0..*");
+//        } else {
+//            CC.addAssociation(fieldType, name, ClassContainer.relationshipType.Dependency, "1", "1");
+//        }
+
         if(fieldType.endsWith("[]")) {
-            CC.addAssociation(fieldType, name, ClassContainer.relationshipType.Dependency, "1", "0..*");
-        } else {
-            CC.addAssociation(fieldType, name, ClassContainer.relationshipType.Dependency, "1", "1");
+            CC.addAssociation(fieldType, name, ClassContainer.relationshipType.Dependency,
+                    "1", "0..*");
         }
+
+        else if(isCollectionType(fieldType)) {
+            CC.addAssociation(fieldType, name, ClassContainer.relationshipType.Dependency,
+                    "1", "0..*");
+        }
+
+        else {
+            CC.addAssociation(fieldType, name, ClassContainer.relationshipType.Dependency,
+                    "1", "0..1");
+        }
+
         return null;
     }
 
-
+    private boolean isCollectionType(String typeName) {
+        if (typeName == null) return false;
+        return typeName.startsWith("java.util.List")
+                || typeName.startsWith("java.util.Set")
+                || typeName.startsWith("java.util.Collection")
+                || typeName.startsWith("java.util.Map");
+    }
 
     public MethodVisitor visitMethod(int access, String name,
                                      String desc, String signature, String[] exceptions) {

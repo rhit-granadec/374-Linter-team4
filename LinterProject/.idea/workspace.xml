@@ -4,129 +4,72 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f40b7185-b2e1-4a35-895e-fbde7c658616" name="Changes" comment="">
+    <list default="true" id="69fce962-48b7-4246-98a7-890ca7c5a293" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_19_2025_4_16_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_19_2025_4_16_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_19_2025_8_47_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2_19_2025_8_47_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/largeApp.svg" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/largeApp.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/outputs/self.svg" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/self.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/ArrowAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/ArrowAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/ClassPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/ClassPrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/Director.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/SVGPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/SVGPrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/analyze/Fred.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/analyze/James.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/analyze/Nothing.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/analyze/old.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/analyze/person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/ASMHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Main/ASMHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/ArrowAnalyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Main/ArrowAnalyzer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/ClassContainer$AssociationContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Main/ClassContainer$AssociationContainer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/ClassContainer$relationshipType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Main/ClassContainer$relationshipType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/ClassContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Main/ClassContainer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/ClassPrinter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Main/ClassPrinter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/DecoratorIdentifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Main/DecoratorIdentifier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/Director.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Main/Director.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/SVGPrinter$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Main/SVGPrinter$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/SVGPrinter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Main/SVGPrinter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/Main/SingletonIdentifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/Main/SingletonIdentifier.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$/.." value="Blacklist-Update" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 6
-}</component>
-  <component name="ProjectId" id="2sxcUvGZON5yeJqPfipzWKpYQg5" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": -1
+}]]></component>
+  <component name="ProjectId" id="2tPSZJf6rT0z3CBCLvAN65dDUV7" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+    &quot;git-widget-placeholder&quot;: &quot;check-for-overextention&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Github\school github\374-Linter-team4\LinterProject\libraries" />
-    </key>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.24978.46" />
-        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-IU-243.24978.46" />
-      </set>
-    </attachedChunks>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f40b7185-b2e1-4a35-895e-fbde7c658616" name="Changes" comment="" />
-      <created>1739400687508</created>
+      <changelist id="69fce962-48b7-4246-98a7-890ca7c5a293" name="Changes" comment="" />
+      <created>1740250499957</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1739400687508</updated>
-      <workItem from="1739400688540" duration="1106000" />
-      <workItem from="1739455114426" duration="38000" />
-      <workItem from="1739455401117" duration="5659000" />
-      <workItem from="1739908693308" duration="478000" />
+      <updated>1740250499957</updated>
     </task>
-    <task id="LOCAL-00001" summary="added local variable checks">
-      <option name="closed" value="true" />
-      <created>1739770291641</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1739770291641</updated>
-    </task>
-    <task id="LOCAL-00002" summary="attempted to cull arrows">
-      <option name="closed" value="true" />
-      <created>1739801255782</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1739801255782</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="added local variable checks" />
-    <MESSAGE value="attempted to cull arrows" />
-    <MESSAGE value="reworked singleton identifier method" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.NullPointerException" package="java.lang" />
-          <option name="timeStamp" value="8" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
