@@ -17,7 +17,8 @@ public class Director {
     public Director(Queue<String> ClassesToAnalyze,
                     String fileName,
                     Set<String> identifiers,
-                    List<String> blacklist) {
+                    List<String> blacklist,
+                    int overUseThreshold) {
         StringBuilder patternBuilder = new StringBuilder("^(");
         for(String blName : blacklist) {
             patternBuilder.append(blName.replace(".", "(/|\\.)"));
@@ -27,7 +28,7 @@ public class Director {
         patternBuilder.append(")");
         blacklistPattern = Pattern.compile(patternBuilder.toString());
         String fullOutputFile = OutputPath + fileName + ".svg";
-        PUMLInterface = new SVGPrinter(fullOutputFile);
+        PUMLInterface = new SVGPrinter(fullOutputFile, overUseThreshold);
 
         this.ClassesToAnalyze = ClassesToAnalyze;
 

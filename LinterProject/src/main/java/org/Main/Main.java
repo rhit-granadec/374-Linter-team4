@@ -7,6 +7,7 @@ public class Main {
     static Queue<String> ClassesToAnalyze = new LinkedList<String>();
     static List<String> blacklist = new ArrayList<>();
     static String outputFilename = "FullSetup";
+    static int overUseThreshold = 3;
 
     public static void main(String[] args) {
         Director runner;
@@ -22,42 +23,48 @@ public class Main {
         runner = new Director(ClassesToAnalyze,
                 outputFilename,
                 identifiers,
-                blacklist);
+                blacklist,
+                overUseThreshold);
         runner.analyze();
 
         setupSelfAnalysis();
         runner = new Director(ClassesToAnalyze,
                 outputFilename,
                 identifiers,
-                blacklist);
+                blacklist,
+                overUseThreshold);
         runner.analyze();
 
-        setupCypherAnalysis();
-        runner = new Director(ClassesToAnalyze,
-                outputFilename,
-                identifiers,
-                blacklist);
-        runner.analyze();
+//        setupCypherAnalysis();
+//        runner = new Director(ClassesToAnalyze,
+//                outputFilename,
+//                identifiers,
+//                blacklist,
+//                overUseThreshold);
+//        runner.analyze();
 
         setupStarbuzzAnalysis();
         runner = new Director(ClassesToAnalyze,
                 outputFilename,
                 identifiers,
-                blacklist);
+                blacklist,
+                overUseThreshold);
         runner.analyze();
 
         setupSingletonSetAnalysis();
         runner = new Director(ClassesToAnalyze,
                 outputFilename,
                 identifiers,
-                blacklist);
+                blacklist,
+                overUseThreshold);
         runner.analyze();
 
         setupLargeAppAnalysis();
         runner = new Director(ClassesToAnalyze,
                 outputFilename,
                 identifiers,
-                blacklist);
+                blacklist,
+                overUseThreshold);
         runner.analyze();
     }
 
@@ -102,12 +109,12 @@ public class Main {
 
     private static void setupCypherAnalysis() {
         resetBlacklist();
-        ClassesToAnalyze.add("org.requestedTest.DecryptionInputStream");
-        ClassesToAnalyze.add("org.requestedTest.EncryptionOutputStream");
-        ClassesToAnalyze.add("org.requestedTest.IDecryption");
-        ClassesToAnalyze.add("org.requestedTest.IEncryption");
-        ClassesToAnalyze.add("org.requestedTest.SubstitutionCipher");
-        ClassesToAnalyze.add("org.requestedTest.TextEditorApp");
+        ClassesToAnalyze.add("requestedTest.DecryptionInputStream");
+        ClassesToAnalyze.add("requestedTest.EncryptionOutputStream");
+        ClassesToAnalyze.add("requestedTest.IDecryption");
+        ClassesToAnalyze.add("requestedTest.IEncryption");
+        ClassesToAnalyze.add("requestedTest.SubstitutionCipher");
+        ClassesToAnalyze.add("requestedTest.TextEditorApp");
         outputFilename = "cypher";
     }
 
