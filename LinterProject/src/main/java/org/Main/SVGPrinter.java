@@ -177,4 +177,8 @@ public class SVGPrinter {
         } else arrow = "-->";
         return arrow;
     }
+
+    public String getOutputFile() {
+        return this.outputFile;
+    }
 }

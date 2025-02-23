@@ -168,7 +168,6 @@ public class ClassPrinter extends ClassVisitor {
             for (LocalVariableNode lvn : localVariables) {
                 String localVarName = localVarParser(lvn.desc);
                 if (localVarName != null) {
-                    System.out.println("local var: " + localVarName);
                     CC.addAssociation(localVarName,
                             null,
                             ClassContainer.relationshipType.DependencyWeak);

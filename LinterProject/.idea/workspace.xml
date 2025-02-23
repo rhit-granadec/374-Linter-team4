@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69fce962-48b7-4246-98a7-890ca7c5a293" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outputs/singleton.svg" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/singleton.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outputs/starbuzz.svg" beforeDir="false" afterPath="$PROJECT_DIR$/outputs/starbuzz.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/ASMHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/ASMHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/Director.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/SingletonIdentifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/SingletonIdentifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/Main/SVGPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/Main/SVGPrinter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +57,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1740250499957</updated>
-      <workItem from="1740257488282" duration="2025000" />
+      <workItem from="1740257488282" duration="6100000" />
     </task>
     <servers />
   </component>

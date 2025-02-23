@@ -49,18 +49,12 @@ public class ASMHandler {
                             cName = cName.substring(0, cName.length()-2);
                         }
                         if(!analyzedClasses.contains(cName)) {
-//                            System.out.println(cName);
                             classNames.offer(cName);
-//                            analyzedClasses.add(cName);
-//                            System.out.println("Added class " + cName);
                         }
                     }
                     for(String variable : cp.getVariables()) {
                         if(!analyzedClasses.contains(variable)) {
-//                            System.out.println(cName);
                             classNames.offer(variable);
-//                            analyzedClasses.add(variable);
-//                            System.out.println("Added class " + cName);
                         }
                     }
                     analyzedClasses.add(classToAnalyze);
@@ -82,16 +76,16 @@ public class ASMHandler {
     private static void inspectMethods(ClassNode classNode, ClassContainer cc) {
         ArrayList<MethodNode> methods = (ArrayList<MethodNode>) classNode.methods;
         for (MethodNode method : methods) {
-            System.out.println("	Method: " + method.name);
-            System.out
-                    .println("	Internal JVM method signature: " + method.desc);
-
-            System.out.println("	Return type: "
-                    + Type.getReturnType(method.desc).getClassName());
-
-            System.out.println("	Args: ");
+//            System.out.println("	Method: " + method.name);
+//            System.out
+//                    .println("	Internal JVM method signature: " + method.desc);
+//
+//            System.out.println("	Return type: "
+//                    + Type.getReturnType(method.desc).getClassName());
+//
+//            System.out.println("	Args: ");
             for (Type argType : Type.getArgumentTypes(method.desc)) {
-                System.out.println("		" + argType.getClassName());
+//                System.out.println("		" + argType.getClassName());
                 // FIXME: what is the argument's *variable* name?
             }
 
@@ -101,16 +95,16 @@ public class ASMHandler {
                 case Opcodes.ACC_PROTECTED -> "protected";
                 default -> "package private";
             };
-            System.out.println("	access? "
-                    + access);
-            System.out.println("	static? "
-                    + ((method.access & Opcodes.ACC_STATIC) != 0));
-            System.out.println("	final? "
-                    + ((method.access & Opcodes.ACC_FINAL) != 0));
-            System.out.println("    abstract? "
-                    + ((method.access & Opcodes.ACC_ABSTRACT) != 0));
-
-            System.out.println();
+//            System.out.println("	access? "
+//                    + access);
+//            System.out.println("	static? "
+//                    + ((method.access & Opcodes.ACC_STATIC) != 0));
+//            System.out.println("	final? "
+//                    + ((method.access & Opcodes.ACC_FINAL) != 0));
+//            System.out.println("    abstract? "
+//                    + ((method.access & Opcodes.ACC_ABSTRACT) != 0));
+//
+//            System.out.println();
 
             // Print the method's instructions
             printInstructions(method, cc);

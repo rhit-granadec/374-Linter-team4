@@ -53,6 +53,7 @@ public class Director {
         }
 
         invokePUML(classContainers);
+        System.out.println("\nYour diagram is located at " + PUMLInterface.getOutputFile());
     }
 
     public ArrayList<ClassContainer> invokeASM() {
